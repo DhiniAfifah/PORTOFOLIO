@@ -15,9 +15,9 @@ const About = () => {
       >
         {/* Rectangle Background */}
         <Box
-          backgroundColor="#FFCDEA" // Warna latar belakang rectangle
-          width={{ base: "100%", md: "100%", lg: "full" }} // Lebar persegi panjang
-          height={{ base: "200px", md: "300px", lg: "250px" }} // Tinggi persegi panjang
+          backgroundColor="#FFCDEA"
+          width={{ base: "100%", md: "100%", lg: "full" }}
+          height={{ base: "200px", md: "300px", lg: "250px" }}
           position="absolute"
           left={0} // Posisi kiri
           top={{ base: 0, md: "120px" }} // Posisi atas
@@ -59,47 +59,39 @@ const About = () => {
         {/* END BAGIAN About */}
 
         {/* START BAGIAN Who Am I */}
-        <Stack w={"100vw"}>
+        <Stack
+          w={"75vw"}
+          direction={{ base: "column", md: "row" }}
+          justify={"center"}
+          gap={"2rem"}
+          mt={{ md: "9rem", base: "3rem" }}
+        >
           <Stack
-            direction={{ base: "column", md: "row" }}
-            gap={{ base: 8, md: 16 }}
-            // width="100%"
-            px={{ base: 6, md: 20 }}
-            // alignItems="flex-start"
-            // justifyContent="flex-start"
-            mt={{ base: "40px", md: "80px" }} // Sesuaikan margin untuk perangkat yang lebih besar
-            textAlign="center" // Teks di tengah untuk layar kecil
+            direction={{ base: "row", md: "row-reverse" }}
+            w={"100%"}
+            justify={{ base: "center", md: "end" }}
           >
-            {/* Teks "Who am I?" */}
             <Text
-              fontSize={{ base: "35px", md: "50px", lg: "60px" }}
+              fontSize={{ base: "2xl", md: "5xl", lg: "6xl" }}
               fontWeight="medium"
               color="black"
               whiteSpace="normal"
-              textAlign="center"
-              mt={{ base: "20px", md: "100px" }} // Mengatur margin atas untuk perangkat mobile dan desktop
+              textAlign={{ base: "center", md: "end" }}
+              w={"100%"}
+              fontFamily="Poppins, sans-serif"
             >
-              Who am I?
+              Who Am I?
             </Text>
           </Stack>
 
-          {/* Deskripsi */}
-          <Stack
-            direction="column" // Menyusun elemen secara vertikal
-            gap={10} // Memberikan jarak antar elemen
-            // width="100%"
-            px={{ base: 6, md: 16 }}
-            alignItems="center"
-            justifyContent="center"
-            // mt={{ base: "40px", md: "-80px" }}
-            textAlign="center"
-          >
+          {/* START desc */}
+          <Stack gap={"2rem"}>
             <Text
               fontSize={{ base: "18px", md: "25px", lg: "30px" }}
               fontWeight="regular"
               color="black"
-              textAlign={{ base: "center", md: "left" }}
-              maxWidth={{ base: "100%", md: "60%" }}
+              textAlign={{ base: "center", md: "start" }}
+              // maxWidth={{ base: "100%", md: "60%" }}
             >
               Hello, I’m Dhini Afifah. Lorem ipsum dolor sit amet, consectetur
               adipisicing elit, sed do eiusmod tempor incididunt ut labore et
@@ -107,22 +99,23 @@ const About = () => {
               exercitation ullamco laboris nisi ut aliquip ex ea commodo
               consequat.
             </Text>
-
             <Text
               fontSize={{ base: "18px", md: "25px", lg: "30px" }}
               fontWeight="regular"
               color="black"
-              textAlign={{ base: "center", md: "left" }}
-              maxWidth={{ base: "100%", md: "60%" }}
+              textAlign={{ base: "center", md: "start" }}
+              // maxWidth={{ base: "100%", md: "60%" }}
             >
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in culpa qui officia deserunt mollit
-              anim id est laborum.
+              Hello, I’m Dhini Afifah. Lorem ipsum dolor sit amet, consectetur
+              adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.
             </Text>
           </Stack>
-          {/* END BAGIAN Who Am I */}
+          {/* END desc */}
         </Stack>
+        {/* END BAGIAN Who Am I */}
       </Stack>
       {/* END Background */}
       <Footer />
