@@ -1,5 +1,16 @@
 import { Link, Stack, Text, Button, Box } from "@chakra-ui/react";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { keyframes } from "@emotion/react";
+
+// Animasi "slide-from-top"
+const slideFromTop = keyframes`
+  0% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+`;
 
 const Footer = () => {
   return (
@@ -67,33 +78,21 @@ const Footer = () => {
           align="center"
           mb={8}
         >
-          <Link
-            href="/project"
-            fontWeight="medium"
-            fontSize="lg"
-            color="Black"
-            fontFamily="'Poppins', sans-serif"
-          >
-            Project
-          </Link>
-          <Link
-            href="/about"
-            fontWeight="medium"
-            fontSize="lg"
-            color="Black"
-            fontFamily="'Poppins', sans-serif"
-          >
-            About
-          </Link>
-          <Link
-            href="/resume"
-            fontWeight="medium"
-            fontSize="lg"
-            color="Black"
-            fontFamily="'Poppins', sans-serif"
-          >
-            Resume
-          </Link>
+          {["Project", "About", "Resume"].map((item) => (
+            <Link
+              key={item}
+              href={`/${item.toLowerCase()}`}
+              fontWeight="medium"
+              fontSize="lg"
+              color="Black"
+              fontFamily="'Poppins', sans-serif"
+              _hover={{
+                animation: `${slideFromTop} 0.5s ease forwards`,
+              }}
+            >
+              {item}
+            </Link>
+          ))}
         </Stack>
 
         {/* Social Media Icons */}
@@ -104,18 +103,25 @@ const Footer = () => {
           align="center"
           mb={8}
         >
-          <Link href="https://github.com/DhiniAfifah/" target="_blank">
-            <FaGithub size={30} color="black" />
-          </Link>
-          <Link
-            href="https://www.linkedin.com/in/siti-maryama-ramadhini-afifah/"
-            target="_blank"
-          >
-            <FaLinkedin size={30} color="black" />
-          </Link>
-          <Link href="https://instagram.com/dhini_afifah/" target="_blank">
-            <FaInstagram size={30} color="black" />
-          </Link>
+          {[
+            { icon: FaGithub, link: "https://github.com/DhiniAfifah/" },
+            {
+              icon: FaLinkedin,
+              link: "https://www.linkedin.com/in/siti-maryama-ramadhini-afifah/",
+            },
+            { icon: FaInstagram, link: "https://instagram.com/dhini_afifah/" },
+          ].map((social, index) => (
+            <Link
+              key={index}
+              href={social.link}
+              target="_blank"
+              _hover={{
+                animation: `${slideFromTop} 0.7s ease forwards`,
+              }}
+            >
+              <social.icon size={30} color="black" />
+            </Link>
+          ))}
         </Stack>
       </Box>
       {/* END Footer */}

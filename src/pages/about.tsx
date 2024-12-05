@@ -19,9 +19,9 @@ const About = () => {
           width={{ base: "100%", md: "100%", lg: "full" }}
           height={{ base: "200px", md: "300px", lg: "250px" }}
           position="absolute"
-          left={0} // Posisi kiri
-          top={{ base: 0, md: "120px" }} // Posisi atas
-          zIndex={90} // Agar rectangle di belakang gambar dan teks
+          left={0}
+          top={{ base: 0, md: "120px" }}
+          zIndex={90}
         />
         {/* START BAGIAN About */}
         <Stack
@@ -34,7 +34,6 @@ const About = () => {
           mt={{ base: "20px", md: "80px" }}
           zIndex={100}
         >
-          {/* Gambar Profil */}
           <Image
             src="./src/image/about/profile.png"
             alt="Profile"
@@ -44,7 +43,6 @@ const About = () => {
             ml={{ base: 0, md: "50px" }}
           />
 
-          {/* Teks "About Me" */}
           <Text
             fontSize={{ base: "3rem", md: "50px", lg: "90px" }}
             fontWeight="semibold"
@@ -91,7 +89,6 @@ const About = () => {
               fontWeight="regular"
               color="black"
               textAlign={{ base: "center", md: "start" }}
-              // maxWidth={{ base: "100%", md: "60%" }}
             >
               Hello, I’m Dhini Afifah. Lorem ipsum dolor sit amet, consectetur
               adipisicing elit, sed do eiusmod tempor incididunt ut labore et
@@ -104,14 +101,101 @@ const About = () => {
               fontWeight="regular"
               color="black"
               textAlign={{ base: "center", md: "start" }}
-              // maxWidth={{ base: "100%", md: "60%" }}
             >
               Hello, I’m Dhini Afifah. Lorem ipsum dolor sit amet, consectetur
               adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-              exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat.
+              dolore magna aliqua.
             </Text>
+
+            {/* Teks "Why hire me?" */}
+            <Text
+              fontSize={{ base: "3xl", md: "5xl", lg: "80px" }}
+              fontWeight="medium"
+              color="black"
+              textAlign="center"
+              fontFamily="Poppins, sans-serif"
+              mt="2rem"
+            >
+              Why hire me?
+            </Text>
+
+            {/* START 3 KOTAK */}
+            <Stack
+              direction={{ base: "column", md: "row" }}
+              gap="8"
+              justify="center"
+              align="center"
+            >
+              {/* Kotak 1 */}
+              <Box
+                bg="#00598B"
+                boxSize={{ base: "200px", md: "300px" }}
+                display="flex"
+                flexDirection="column"
+                justifyContent="center"
+                alignItems="center"
+                borderRadius="31px"
+                shadow="md"
+                p="4"
+              >
+                <Image
+                  src="./src/image/icons/icon1.png"
+                  alt="Icon 1"
+                  boxSize="50%"
+                  mb="4"
+                />
+                <Text fontSize="lg" color="white" textAlign="center">
+                  Deskripsi 1
+                </Text>
+              </Box>
+
+              {/* Kotak 2 */}
+              <Box
+                bg="#00598B"
+                boxSize={{ base: "200px", md: "300px" }}
+                display="flex"
+                flexDirection="column"
+                justifyContent="center"
+                alignItems="center"
+                borderRadius="31px"
+                shadow="md"
+                p="4"
+              >
+                <Image
+                  src="./src/image/icons/icon2.png"
+                  alt="Icon 2"
+                  boxSize="50%"
+                  mb="4"
+                />
+                <Text fontSize="lg" color="white" textAlign="center">
+                  Deskripsi 2
+                </Text>
+              </Box>
+
+              {/* Kotak 3 */}
+              <Box
+                bg="#00598B"
+                boxSize={{ base: "200px", md: "300px" }}
+                display="flex"
+                flexDirection="column"
+                justifyContent="center"
+                alignItems="center"
+                borderRadius="31px"
+                shadow="md"
+                p="4"
+              >
+                <Image
+                  src="./src/image/icons/icon3.png"
+                  alt="Icon 3"
+                  boxSize="50%"
+                  mb="4"
+                />
+                <Text fontSize="lg" color="white" textAlign="center">
+                  Deskripsi 3
+                </Text>
+              </Box>
+            </Stack>
+            {/* END 3 KOTAK */}
           </Stack>
           {/* END desc */}
         </Stack>

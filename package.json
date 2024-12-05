@@ -12,7 +12,7 @@
   "dependencies": {
     "@chakra-ui/icons": "^2.2.4",
     "@chakra-ui/react": "^3.1.1",
-    "@emotion/react": "^11.13.3",
+    "@emotion/react": "^11.13.5",
     "@emotion/styled": "^11.13.0",
     "@generouted/react-router": "^1.19.9",
     "framer-motion": "^11.11.17",
