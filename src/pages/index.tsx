@@ -42,7 +42,7 @@ const Index = () => {
           >
             {/* Gradien */}
             <Image
-              src="../image/Gradient.png"
+              src="./src/image/Gradient.png"
               alt="Gradient"
               objectFit="contain"
               boxSize={{ base: "300px", md: "500px", lg: "500px" }}
