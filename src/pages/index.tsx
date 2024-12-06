@@ -1,4 +1,4 @@
-import { Stack, Image, Text } from "@chakra-ui/react";
+import { Stack, Image, Text, Box } from "@chakra-ui/react";
 import { keyframes } from "@emotion/react";
 import Navbar from "@/components/bahan/navbar";
 import Footer from "@/components/bahan/footer";
@@ -31,7 +31,7 @@ const Index = () => {
           justify={"center"}
           alignItems="center"
           gap={"5rem"}
-          mt={{ md: "9rem", base: "3rem" }}
+          mt={{ lg: "9rem", md: "0rem", base: "3rem" }}
         >
           {/* Container untuk Gradien dan Emoji */}
           <Stack
@@ -53,8 +53,8 @@ const Index = () => {
               src="./src/image/Emoji.png"
               alt="Emoji"
               objectFit="contain"
-              boxSize={{ base: "180px", md: "250px", lg: "300px" }}
-              mt={{ base: "-260px", md: "-300px", lg: "-420px" }}
+              boxSize={{ base: "180px", md: "200px", lg: "300px" }}
+              mt={{ base: "-260px", md: "-375px", lg: "-420px" }}
               animation={`${pulseAnimation} 1.5s infinite`}
             />
           </Stack>
@@ -65,7 +65,7 @@ const Index = () => {
             gap={4}
             maxWidth={{ base: "100%", md: "50%" }}
             textAlign={{ base: "center", md: "left" }}
-            mt={{ base: "10px", md: "-300px", lg: "150px" }}
+            mt={{ base: "10px", md: "100px", lg: "150px" }}
           >
             {/* Teks pertama */}
             <Text
@@ -91,6 +91,14 @@ const Index = () => {
           </Stack>
         </Stack>
         {/* END Gradient and Emoji */}
+        <Box
+          backgroundColor="#FFCDEA"
+          width={{ base: "100%", md: "100%", lg: "full" }}
+          height={{ base: "200px", md: "150px", lg: "250px" }}
+          position="relative"
+          zIndex={0} // Sesuaikan jika ada masalah lapisan
+          mt={"20rem"} // Beri jarak agar tidak menempel
+        />
       </Stack>
       {/* END Background */}
 

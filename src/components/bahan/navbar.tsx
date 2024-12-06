@@ -26,6 +26,11 @@ const Navbar = () => {
               fontWeight={"Bold"}
               fontSize={{ base: "1rem", md: "1.25rem", xl: "1.5rem" }}
               color={"black"}
+              transition="transform 0.3s ease-in-out"
+              _hover={{
+                transform: "scale(1.1)", // Tambahkan animasi scale-in
+                color: "#00598B", // Opsional: Ubah warna saat hover
+              }}
             >
               Home
             </Text>
@@ -35,6 +40,11 @@ const Navbar = () => {
               fontWeight={"Bold"}
               fontSize={{ base: "1rem", md: "1.25rem", xl: "1.5rem" }}
               color={"black"}
+              transition="transform 0.3s ease-in-out"
+              _hover={{
+                transform: "scale(1.1)",
+                color: "#00598B",
+              }}
             >
               About
             </Text>
@@ -44,6 +54,11 @@ const Navbar = () => {
               fontWeight={"Bold"}
               fontSize={{ base: "1rem", md: "1.25rem", xl: "1.5rem" }}
               color={"black"}
+              transition="transform 0.3s ease-in-out"
+              _hover={{
+                transform: "scale(1.1)",
+                color: "#00598B",
+              }}
             >
               Project
             </Text>
@@ -52,8 +67,6 @@ const Navbar = () => {
             <Button
               fontSize={{ base: "1rem", md: "1.25rem", xl: "1.5rem" }}
               bgColor="#FFCDEA"
-              // border="2px solid"
-              // borderColor="#FFCDEA"
               color="Black"
               borderRadius="full"
               px={{ base: "1.5rem", md: "1.5rem" }}
