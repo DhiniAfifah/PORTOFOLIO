@@ -36,7 +36,7 @@ const About = () => {
           zIndex={100}
         >
           <Image
-            src="./src/image/about/profile.png"
+            src="/image/about/profile.png"
             alt="Profile"
             objectFit="contain"
             boxSize={{ base: "300px", md: "350px", lg: "600px" }}
@@ -157,7 +157,7 @@ const About = () => {
               }}
             >
               <Image
-                src="./src/image/about/Emoji2.png"
+                src="/image/about/Emoji2.png"
                 alt="Icon 1"
                 boxSize={{ base: "100px", md: "120px", lg: "150px" }}
                 mb="4"
@@ -200,7 +200,7 @@ const About = () => {
               }}
             >
               <Image
-                src="./src/image/about/Emoji3.png"
+                src="/image/about/Emoji3.png"
                 alt="Icon 2"
                 boxSize={{ base: "100px", md: "120px", lg: "150px" }}
                 mb="4"
@@ -243,7 +243,7 @@ const About = () => {
               }}
             >
               <Image
-                src="./src/image/about/Emoji4.png"
+                src="/image/about/Emoji4.png"
                 alt="Icon 3"
                 boxSize={{ base: "100px", md: "120px", lg: "150px" }}
                 mb="4"
