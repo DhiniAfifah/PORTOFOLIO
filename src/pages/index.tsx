@@ -1,4 +1,4 @@
-import { Stack, Image, Text, Box } from "@chakra-ui/react";
+import { Stack, Image, Text, Box, SimpleGrid } from "@chakra-ui/react";
 import { keyframes } from "@emotion/react";
 import Navbar from "@/components/bahan/navbar";
 import Footer from "@/components/bahan/footer";
@@ -20,7 +20,7 @@ const Index = () => {
       {/* START Background */}
       <Stack
         backgroundColor="#fff"
-        minHeight="450vh"
+        minHeight={{ lg: "450vh", md: "300vh", base: "250vh" }}
         alignItems="center"
         position="relative"
       >
@@ -91,14 +91,304 @@ const Index = () => {
           </Stack>
         </Stack>
         {/* END Gradient and Emoji */}
-        <Box
-          backgroundColor="#FFCDEA"
-          width={{ base: "100%", md: "100%", lg: "full" }}
-          height={{ base: "200px", md: "150px", lg: "250px" }}
-          position="relative"
-          zIndex={0} // Sesuaikan jika ada masalah lapisan
-          mt={"20rem"} // Beri jarak agar tidak menempel
-        />
+
+        {/* START Garis What */}
+        <Stack direction="column" width="100%" align="flex-start" gap={0}>
+          <Box
+            backgroundColor="#FFCDEA"
+            width={{ base: "100%", md: "100%", lg: "full" }}
+            height={{ base: "100px", md: "150px", lg: "250px" }}
+            position="relative"
+            zIndex={5}
+            mt={{ base: "150px", md: "150px", lg: "350px" }}
+          />
+          <Text
+            fontSize={{ base: "2rem", md: "50px", lg: "90px" }}
+            px={{ base: 6, md: 16, lg: "80px" }}
+            mt={{ base: "-75px", md: "-110px", lg: "-200px" }}
+            fontWeight="medium"
+            color="black"
+            textAlign="left"
+            fontFamily="Poppins, sans-serif"
+            zIndex={10}
+          >
+            What I do?
+          </Text>
+        </Stack>
+        {/* END Garis What */}
+
+        {/* START Experience */}
+        <SimpleGrid
+          columns={1}
+          w={{ base: "80vw", md: "75vw", lg: "65vw" }}
+          gap={{ base: "35px", md: "35px", lg: "70px" }}
+          mt={{ base: "50px", md: "100px", lg: "150px" }}
+        >
+          {/* Kotak 1 */}
+          <Stack
+            direction="row"
+            gap={{ base: "10px", md: "20px", lg: "30px" }}
+            align="center"
+          >
+            <Box
+              backgroundColor="#D9D9D9"
+              w={{ base: "100px", md: "150px", lg: "500px" }} // Lebar kotak responsif
+              h={{ base: "100px", md: "150px", lg: "300px" }} // Tinggi kotak responsif
+              borderRadius="md"
+            />
+            <Stack
+              gap="1px"
+              flex="1"
+              h={{ base: "100px", md: "150px", lg: "300px" }}
+            >
+              <Text
+                fontSize={{ base: "16px", md: "20px", lg: "30px" }} // Ukuran font responsif
+                fontWeight="medium"
+                color="black"
+                fontFamily="Poppins, sans-serif"
+              >
+                Nama Kegiatan 1
+              </Text>
+              <Text
+                fontSize={{ base: "10px", md: "16px", lg: "20px" }}
+                fontWeight="regular"
+                color="#676565"
+                fontFamily="Poppins, sans-serif"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+              </Text>
+            </Stack>
+          </Stack>
+
+          {/* Kotak 2 */}
+          <Stack
+            direction="row"
+            gap={{ base: "10px", md: "20px", lg: "30px" }}
+            align="center"
+          >
+            <Box
+              backgroundColor="#D9D9D9"
+              w={{ base: "100px", md: "150px", lg: "500px" }}
+              h={{ base: "100px", md: "150px", lg: "300px" }}
+              borderRadius="md"
+            />
+            <Stack
+              gap="1px"
+              flex="1"
+              h={{ base: "100px", md: "150px", lg: "300px" }}
+            >
+              <Text
+                fontSize={{ base: "16px", md: "20px", lg: "30px" }}
+                fontWeight="medium"
+                color="black"
+                fontFamily="Poppins, sans-serif"
+              >
+                Nama Kegiatan 2
+              </Text>
+              <Text
+                fontSize={{ base: "10px", md: "16px", lg: "20px" }}
+                fontWeight="regular"
+                color="#676565"
+                fontFamily="Poppins, sans-serif"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+              </Text>
+            </Stack>
+          </Stack>
+
+          {/* Kotak 3 */}
+          <Stack
+            direction="row"
+            gap={{ base: "10px", md: "20px", lg: "30px" }}
+            align="center"
+          >
+            <Box
+              backgroundColor="#D9D9D9"
+              w={{ base: "100px", md: "150px", lg: "500px" }}
+              h={{ base: "100px", md: "150px", lg: "300px" }}
+              borderRadius="md"
+            />
+            <Stack
+              gap="1px"
+              flex="1"
+              h={{ base: "100px", md: "150px", lg: "300px" }}
+            >
+              <Text
+                fontSize={{ base: "16px", md: "20px", lg: "30px" }}
+                fontWeight="medium"
+                color="black"
+                fontFamily="Poppins, sans-serif"
+              >
+                Nama Kegiatan 3
+              </Text>
+              <Text
+                fontSize={{ base: "10px", md: "16px", lg: "20px" }}
+                fontWeight="regular"
+                color="#676565"
+                fontFamily="Poppins, sans-serif"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi
+              </Text>
+            </Stack>
+          </Stack>
+        </SimpleGrid>
+        {/* END Experience */}
+
+        {/* START Garis Projects */}
+        <Stack direction="column" width="100%" align="flex-start" gap={0}>
+          <Box
+            backgroundColor="#FFCDEA"
+            width={{ base: "100%", md: "100%", lg: "full" }}
+            height={{ base: "100px", md: "150px", lg: "250px" }}
+            position="relative"
+            zIndex={5}
+            mt={{ base: "70px", md: "120px", lg: "300px" }}
+          />
+          <Text
+            fontSize={{ base: "2rem", md: "50px", lg: "90px" }}
+            px={{ base: 6, md: 16, lg: "80px" }}
+            mt={{ base: "-75px", md: "-110px", lg: "-200px" }}
+            fontWeight="medium"
+            color="black"
+            textAlign="left"
+            fontFamily="Poppins, sans-serif"
+            zIndex={10}
+          >
+            My Project's
+          </Text>
+        </Stack>
+        {/* END Garis Projects */}
+
+        {/* START Projects */}
+        <SimpleGrid
+          columns={1}
+          w={{ base: "80vw", md: "75vw", lg: "65vw" }}
+          gap={{ base: "35px", md: "35px", lg: "70px" }}
+          mt={{ base: "50px", md: "100px", lg: "150px" }}
+        >
+          {/* Kotak 1 */}
+          <Stack
+            direction="row"
+            gap={{ base: "10px", md: "20px", lg: "30px" }}
+            align="center"
+          >
+            <Box
+              backgroundColor="#D9D9D9"
+              w={{ base: "100px", md: "150px", lg: "500px" }} // Lebar kotak responsif
+              h={{ base: "100px", md: "150px", lg: "300px" }} // Tinggi kotak responsif
+              borderRadius="md"
+            />
+            <Stack
+              gap="1px"
+              flex="1"
+              h={{ base: "100px", md: "150px", lg: "300px" }}
+            >
+              <Text
+                fontSize={{ base: "16px", md: "20px", lg: "30px" }} // Ukuran font responsif
+                fontWeight="medium"
+                color="black"
+                fontFamily="Poppins, sans-serif"
+              >
+                Nama Kegiatan 1
+              </Text>
+              <Text
+                fontSize={{ base: "10px", md: "16px", lg: "20px" }}
+                fontWeight="regular"
+                color="#676565"
+                fontFamily="Poppins, sans-serif"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+              </Text>
+            </Stack>
+          </Stack>
+
+          {/* Kotak 2 */}
+          <Stack
+            direction="row"
+            gap={{ base: "10px", md: "20px", lg: "30px" }}
+            align="center"
+          >
+            <Box
+              backgroundColor="#D9D9D9"
+              w={{ base: "100px", md: "150px", lg: "500px" }}
+              h={{ base: "100px", md: "150px", lg: "300px" }}
+              borderRadius="md"
+            />
+            <Stack
+              gap="1px"
+              flex="1"
+              h={{ base: "100px", md: "150px", lg: "300px" }}
+            >
+              <Text
+                fontSize={{ base: "16px", md: "20px", lg: "30px" }}
+                fontWeight="medium"
+                color="black"
+                fontFamily="Poppins, sans-serif"
+              >
+                Nama Kegiatan 2
+              </Text>
+              <Text
+                fontSize={{ base: "10px", md: "16px", lg: "20px" }}
+                fontWeight="regular"
+                color="#676565"
+                fontFamily="Poppins, sans-serif"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+              </Text>
+            </Stack>
+          </Stack>
+
+          {/* Kotak 3 */}
+          <Stack
+            direction="row"
+            gap={{ base: "10px", md: "20px", lg: "30px" }}
+            align="center"
+          >
+            <Box
+              backgroundColor="#D9D9D9"
+              w={{ base: "100px", md: "150px", lg: "500px" }}
+              h={{ base: "100px", md: "150px", lg: "300px" }}
+              borderRadius="md"
+            />
+            <Stack
+              gap="1px"
+              flex="1"
+              h={{ base: "100px", md: "150px", lg: "300px" }}
+            >
+              <Text
+                fontSize={{ base: "16px", md: "20px", lg: "30px" }}
+                fontWeight="medium"
+                color="black"
+                fontFamily="Poppins, sans-serif"
+              >
+                Nama Kegiatan 3
+              </Text>
+              <Text
+                fontSize={{ base: "10px", md: "16px", lg: "20px" }}
+                fontWeight="regular"
+                color="#676565"
+                fontFamily="Poppins, sans-serif"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi
+              </Text>
+            </Stack>
+          </Stack>
+        </SimpleGrid>
+        {/* END Projects */}
       </Stack>
       {/* END Background */}
 
