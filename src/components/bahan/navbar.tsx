@@ -49,7 +49,7 @@ const Navbar = () => {
               About
             </Text>
           </Link>
-          <Link href={"/project"}>
+          <Link href={"#what-i-do"}>
             <Text
               fontWeight={"Bold"}
               fontSize={{ base: "1rem", md: "1.25rem", xl: "1.5rem" }}

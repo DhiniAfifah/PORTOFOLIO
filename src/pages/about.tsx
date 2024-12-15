@@ -92,11 +92,12 @@ const About = () => {
               color="black"
               textAlign={{ base: "center", md: "start" }}
             >
-              Hello, I’m Dhini Afifah. Lorem ipsum dolor sit amet, consectetur
-              adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-              exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat.
+              Hello, I’m Dhini Afifah, a tech enthusiast from Universitas
+              Multimedia Nusantara, blending creativity with logic. From
+              building websites to securing systems, I’m passionate about making
+              technology work for people. My journey in Informatics has given me
+              the tools to turn complex ideas into intuitive, user-centric
+              solutions.
             </Text>
             <Text
               fontSize={{ base: "18px", md: "25px", lg: "30px" }}
@@ -105,9 +106,9 @@ const About = () => {
               color="black"
               textAlign={{ base: "center", md: "start" }}
             >
-              Hello, I’m Dhini Afifah. Lorem ipsum dolor sit amet, consectetur
-              adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.
+              Driven by curiosity and collaboration, I’m always on the lookout
+              for new ways to innovate and improve. I’m here to bridge the gap
+              between data, design, and user experience, one project at a time.
             </Text>
           </Stack>
           {/* END desc */}
@@ -143,7 +144,7 @@ const About = () => {
             <Box
               bg="#00598B"
               w={{ base: "auto", md: "400px", lg: "400px" }}
-              h={{ base: "auto", md: "300px", lg: "350px" }}
+              h={{ base: "auto", md: "320px", lg: "360px" }}
               display="flex"
               flexDirection="column"
               justifyContent="flex-start"
@@ -167,9 +168,9 @@ const About = () => {
                 color="white"
                 fontWeight="semibold"
                 fontFamily="Poppins, sans-serif"
-                mb="4"
+                mb="1"
               >
-                Multitasking
+                Team Working
               </Text>
               <Text
                 fontSize="md"
@@ -177,8 +178,9 @@ const About = () => {
                 textAlign="left"
                 fontFamily="Poppins, sans-serif"
               >
-                Hello, I’m Dhini Afifah. Lorem ipsum dolor sit amet, consectetur
-                adipisic
+                I excel at analyzing complex challenges and developing
+                innovative solutions that drive results, ensuring obstacles are
+                turned into opportunities for growth.
               </Text>
             </Box>
 
@@ -186,7 +188,7 @@ const About = () => {
             <Box
               bg="#00598B"
               w={{ base: "auto", md: "400px", lg: "400px" }}
-              h={{ base: "auto", md: "300px", lg: "350px" }}
+              h={{ base: "auto", md: "320px", lg: "360px" }}
               display="flex"
               flexDirection="column"
               justifyContent="flex-start"
@@ -210,9 +212,9 @@ const About = () => {
                 color="white"
                 fontFamily="Poppins, sans-serif"
                 fontWeight="semibold"
-                mb="4"
+                mb="1"
               >
-                Collaborative
+                Problem-solving
               </Text>
               <Text
                 fontSize="md"
@@ -220,8 +222,9 @@ const About = () => {
                 textAlign="left"
                 fontFamily="Poppins, sans-serif"
               >
-                I work well with teams, value diverse input, and ensure that
-                everyonents voice is heard to create effective solusions.
+                I thrive in collaborative environments, leveraging diverse
+                perspectives to achieve shared goals and fostering a positive
+                and productive team dynamic.
               </Text>
             </Box>
 
@@ -229,7 +232,7 @@ const About = () => {
             <Box
               bg="#00598B"
               w={{ base: "auto", md: "400px", lg: "400px" }}
-              h={{ base: "auto", md: "300px", lg: "350px" }}
+              h={{ base: "auto", md: "320px", lg: "360px" }}
               display="flex"
               flexDirection="column"
               justifyContent="flex-start"
@@ -253,7 +256,7 @@ const About = () => {
                 color="white"
                 fontFamily="Poppins, sans-serif"
                 fontWeight="semibold"
-                mb="4"
+                mb="1"
               >
                 Creative Thinking
               </Text>
@@ -263,8 +266,9 @@ const About = () => {
                 textAlign="left"
                 fontFamily="Poppins, sans-serif"
               >
-                Hello, I’m Dhini Afifah. Lorem ipsum dolor sit amet, consectetur
-                adipisic
+                I bring fresh ideas and out-of-the-box solutions to the table,
+                constantly thinking creatively to enhance efficiency and deliver
+                unique approaches to challenges.
               </Text>
             </Box>
           </Stack>
