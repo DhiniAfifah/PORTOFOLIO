@@ -135,10 +135,12 @@ const Index = () => {
             onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
             transition="transform 0.6s ease"
           >
-            <Box
-              backgroundColor="#D9D9D9"
+            <Image
+              src="/image/VJD.png"
+              alt="VJD"
               w={{ base: "150px", md: "195px", lg: "500px" }}
               h={{ base: "90px", md: "200px", lg: "300px" }}
+              objectFit="cover"
               borderRadius="md"
             />
             <Stack
@@ -227,16 +229,18 @@ const Index = () => {
             onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
             transition="transform 0.6s ease"
           >
-            <Box
-              backgroundColor="#D9D9D9"
+            <Image
+              src="/image/JUICE.png"
+              alt="VJD"
               w={{ base: "150px", md: "195px", lg: "500px" }}
               h={{ base: "90px", md: "200px", lg: "300px" }}
+              objectFit="cover"
               borderRadius="md"
             />
             <Stack
               gap="1px"
               flex="1"
-              h={{ base: "auto", md: "200px", lg: "300px" }} // Menyesuaikan tinggi konten
+              h={{ base: "auto", md: "200px", lg: "300px" }}
             >
               <Text
                 fontSize={{ base: "14px", md: "20px", lg: "30px" }}
@@ -285,11 +289,11 @@ const Index = () => {
                   color="white"
                   borderRadius="60px"
                   w={{ base: "100px", md: "auto", lg: "auto" }}
-                  maxW={{ base: "60px", md: "150px", lg: "200px" }}
+                  maxW={{ base: "75px", md: "150px", lg: "200px" }}
                   fontSize={{ base: "9px", md: "14px", lg: "16px" }}
                   fontFamily="Poppins, sans-serif"
                 >
-                  Efficiency
+                  Collaboration
                 </Button>
                 <Button
                   size="sm"
@@ -318,11 +322,13 @@ const Index = () => {
             onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
             transition="transform 0.6s ease"
           >
-            <Box
-              backgroundColor="#D9D9D9"
+            <Image
+              src="/image/CBM.png"
+              alt="VJD"
               w={{ base: "150px", md: "195px", lg: "500px" }}
               h={{ base: "90px", md: "200px", lg: "300px" }}
-              borderRadius={"md"}
+              objectFit="cover"
+              borderRadius="md"
             />
             <Stack
               gap="1px"
@@ -409,16 +415,18 @@ const Index = () => {
             onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
             transition="transform 0.6s ease"
           >
-            <Box
-              backgroundColor="#D9D9D9"
+            <Image
+              src="/image/PPIF.png"
+              alt="VJD"
               w={{ base: "150px", md: "195px", lg: "500px" }}
               h={{ base: "90px", md: "200px", lg: "300px" }}
+              objectFit="cover"
               borderRadius="md"
             />
             <Stack
               gap="1px"
               flex="1"
-              h={{ base: "auto", md: "200px", lg: "300px" }} // Menyesuaikan tinggi konten
+              h={{ base: "auto", md: "200px", lg: "300px" }}
             >
               <Text
                 fontSize={{ base: "14px", md: "20px", lg: "30px" }}
@@ -500,16 +508,18 @@ const Index = () => {
             onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
             transition="transform 0.6s ease"
           >
-            <Box
-              backgroundColor="#D9D9D9"
+            <Image
+              src="/image/fesofity.png"
+              alt="VJD"
               w={{ base: "150px", md: "195px", lg: "500px" }}
               h={{ base: "90px", md: "200px", lg: "300px" }}
+              objectFit="cover"
               borderRadius="md"
             />
             <Stack
               gap="1px"
               flex="1"
-              h={{ base: "auto", md: "200px", lg: "300px" }} // Menyesuaikan tinggi konten
+              h={{ base: "auto", md: "200px", lg: "300px" }}
             >
               <Text
                 fontSize={{ base: "14px", md: "20px", lg: "30px" }}
@@ -591,10 +601,12 @@ const Index = () => {
             onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
             transition="transform 0.6s ease"
           >
-            <Box
-              backgroundColor="#D9D9D9"
+            <Image
+              src="/image/IFW.png"
+              alt="VJD"
               w={{ base: "150px", md: "195px", lg: "500px" }}
               h={{ base: "90px", md: "200px", lg: "300px" }}
+              objectFit="cover"
               borderRadius="md"
             />
             <Stack
@@ -720,8 +732,8 @@ const Index = () => {
           >
             <Box
               backgroundColor="#D9D9D9"
-              w={{ base: "100px", md: "150px", lg: "500px" }} // Lebar kotak responsif
-              h={{ base: "100px", md: "150px", lg: "300px" }} // Tinggi kotak responsif
+              w={{ base: "100px", md: "150px", lg: "500px" }}
+              h={{ base: "100px", md: "150px", lg: "300px" }}
               borderRadius="md"
             />
             <Stack
@@ -730,7 +742,7 @@ const Index = () => {
               h={{ base: "100px", md: "150px", lg: "300px" }}
             >
               <Text
-                fontSize={{ base: "16px", md: "20px", lg: "30px" }} // Ukuran font responsif
+                fontSize={{ base: "16px", md: "20px", lg: "30px" }}
                 fontWeight="medium"
                 color="black"
                 fontFamily="Poppins, sans-serif"
