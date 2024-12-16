@@ -9,7 +9,7 @@ const About = () => {
       {/* START Background */}
       <Stack
         backgroundColor="#fff"
-        minHeight="300vh"
+        minHeight={{ lg: "300vh", md: "290vh", base: "355vh" }}
         alignItems="center"
         position="relative"
       >
@@ -118,7 +118,7 @@ const About = () => {
         {/* START BAGIAN Why Hire Me */}
         <Stack
           w={"75vw"}
-          mt={{ md: "10rem", base: "5rem" }}
+          mt={{ md: "10rem", base: "5rem", lg: "15rem" }}
           align="center"
           gap="4rem"
         >
@@ -127,7 +127,7 @@ const About = () => {
             fontSize={{ base: "3xl", md: "5xl", lg: "80px" }}
             fontWeight="medium"
             color="black"
-            textAlign="center"
+            textAlign={{ base: "center", md: "left" }}
             fontFamily="Poppins, sans-serif"
           >
             Why hire me?
@@ -276,12 +276,12 @@ const About = () => {
         </Stack>
         {/* END BAGIAN Why Hire Me */}
 
-        {/* START BAGIAN Tools I use */}
+        {/* START BAGIAN Hobby */}
         <Stack
           w={"75vw"}
-          mt={{ md: "15rem", base: "5rem" }}
+          mt={{ md: "13rem", base: "2rem", lg: "15rem" }}
           align="start"
-          gap="4rem"
+          gap="1rem"
         >
           {/* Teks "Why hire me?" */}
           <Text
@@ -291,10 +291,24 @@ const About = () => {
             textAlign="center"
             fontFamily="Poppins, sans-serif"
           >
-            Tools I use?
+            Me Outside of Work
+          </Text>
+          {/* Teks tambahan */}
+          <Text
+            fontSize={{ base: "sm", md: "2xl", lg: "3xl" }}
+            fontWeight="regular"
+            color="#676565"
+            textAlign={{ base: "center", md: "left", lg: "left" }}
+            fontFamily="Poppins, sans-serif"
+            lineHeight="1.6"
+          >
+            When I’m not coding or working on projects, I love spending time
+            with my cat, diving into a good book, or enjoying the outdoors.
+            Whether it's hiking or simply soaking in the peace of nature, these
+            moments help me recharge and spark new ideas.
           </Text>
         </Stack>
-        {/* END BAGIAN Tools I use */}
+        {/* END BAGIAN Hobby */}
       </Stack>
       {/* END Background */}
       <Footer />
