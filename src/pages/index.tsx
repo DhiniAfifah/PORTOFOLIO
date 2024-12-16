@@ -173,15 +173,17 @@ const Index = () => {
                 gap={3}
                 mt={3}
                 align="center"
+                justify={{ base: "center", md: "flex-start" }}
+                w="100%"
               >
                 <Button
                   size="sm"
                   bg="black"
                   color="white"
                   borderRadius="60px"
-                  w={{ base: "100px", md: "auto", lg: "auto" }}
-                  maxW={{ base: "90px", md: "150px", lg: "auto" }}
-                  fontSize={{ base: "10px", md: "14px", lg: "16px" }}
+                  w={{ base: "90px", md: "auto", lg: "auto" }}
+                  maxW={{ base: "80px", md: "150px", lg: "auto" }}
+                  fontSize={{ base: "9px", md: "14px", lg: "16px" }}
                   fontFamily="Poppins, sans-serif"
                 >
                   Team Working
@@ -204,8 +206,8 @@ const Index = () => {
                   color="white"
                   borderRadius="60px"
                   w={{ base: "100px", md: "auto", lg: "auto" }}
-                  maxW={{ base: "100px", md: "150px", lg: "200px" }}
-                  fontSize={{ base: "10px", md: "14px", lg: "16px" }}
+                  maxW={{ base: "90px", md: "150px", lg: "200px" }}
+                  fontSize={{ base: "9px", md: "14px", lg: "16px" }}
                   fontFamily="Poppins, sans-serif"
                 >
                   Usability Testing
@@ -262,15 +264,17 @@ const Index = () => {
                 gap={3}
                 mt={3}
                 align="center"
+                justify={{ base: "center", md: "flex-start" }}
+                w="100%"
               >
                 <Button
                   size="sm"
                   bg="black"
                   color="white"
                   borderRadius="60px"
-                  w={{ base: "100px", md: "auto", lg: "auto" }}
-                  maxW={{ base: "90px", md: "150px", lg: "auto" }}
-                  fontSize={{ base: "10px", md: "14px", lg: "16px" }}
+                  w={{ base: "90px", md: "auto", lg: "auto" }}
+                  maxW={{ base: "80px", md: "150px", lg: "auto" }}
+                  fontSize={{ base: "9px", md: "14px", lg: "16px" }}
                   fontFamily="Poppins, sans-serif"
                 >
                   Team Working
@@ -281,8 +285,8 @@ const Index = () => {
                   color="white"
                   borderRadius="60px"
                   w={{ base: "100px", md: "auto", lg: "auto" }}
-                  maxW={{ base: "75px", md: "150px", lg: "200px" }}
-                  fontSize={{ base: "10px", md: "14px", lg: "16px" }}
+                  maxW={{ base: "60px", md: "150px", lg: "200px" }}
+                  fontSize={{ base: "9px", md: "14px", lg: "16px" }}
                   fontFamily="Poppins, sans-serif"
                 >
                   Efficiency
@@ -294,7 +298,7 @@ const Index = () => {
                   borderRadius="60px"
                   w={{ base: "100px", md: "auto", lg: "auto" }}
                   maxW={{ base: "90px", md: "150px", lg: "auto" }}
-                  fontSize={{ base: "10px", md: "14px", lg: "16px" }}
+                  fontSize={{ base: "9px", md: "14px", lg: "16px" }}
                   fontFamily="Poppins, sans-serif"
                 >
                   Problem Solving
@@ -351,6 +355,8 @@ const Index = () => {
                 gap={3}
                 mt={3}
                 align="center"
+                justify={{ base: "center", md: "flex-start" }}
+                w="100%"
               >
                 <Button
                   size="sm"
@@ -358,8 +364,8 @@ const Index = () => {
                   color="white"
                   borderRadius="60px"
                   w={{ base: "100px", md: "auto", lg: "auto" }}
-                  maxW={{ base: "90px", md: "150px", lg: "auto" }}
-                  fontSize={{ base: "10px", md: "14px", lg: "16px" }}
+                  maxW={{ base: "66px", md: "150px", lg: "auto" }}
+                  fontSize={{ base: "9px", md: "14px", lg: "16px" }}
                   fontFamily="Poppins, sans-serif"
                 >
                   TeamWork
@@ -370,8 +376,8 @@ const Index = () => {
                   color="white"
                   borderRadius="60px"
                   w={{ base: "100px", md: "auto", lg: "auto" }}
-                  maxW={{ base: "100px", md: "150px", lg: "auto" }}
-                  fontSize={{ base: "10px", md: "14px", lg: "16px" }}
+                  maxW={{ base: "90px", md: "150px", lg: "auto" }}
+                  fontSize={{ base: "9px", md: "14px", lg: "16px" }}
                   fontFamily="Poppins, sans-serif"
                 >
                   Communication
@@ -440,6 +446,8 @@ const Index = () => {
                 gap={3}
                 mt={3}
                 align="center"
+                justify={{ base: "center", md: "flex-start" }}
+                w="100%"
               >
                 <Button
                   size="sm"
@@ -447,8 +455,8 @@ const Index = () => {
                   color="white"
                   borderRadius="60px"
                   w={{ base: "100px", md: "auto", lg: "auto" }}
-                  maxW={{ base: "90px", md: "150px", lg: "auto" }}
-                  fontSize={{ base: "10px", md: "14px", lg: "16px" }}
+                  maxW={{ base: "70px", md: "150px", lg: "auto" }}
+                  fontSize={{ base: "9px", md: "14px", lg: "16px" }}
                   fontFamily="Poppins, sans-serif"
                 >
                   Leadership
@@ -459,8 +467,8 @@ const Index = () => {
                   color="white"
                   borderRadius="60px"
                   w={{ base: "100px", md: "auto", lg: "auto" }}
-                  maxW={{ base: "90px", md: "150px", lg: "auto" }}
-                  fontSize={{ base: "10px", md: "14px", lg: "16px" }}
+                  maxW={{ base: "85px", md: "150px", lg: "auto" }}
+                  fontSize={{ base: "9px", md: "14px", lg: "16px" }}
                   fontFamily="Poppins, sans-serif"
                 >
                   Public Speaking
@@ -471,8 +479,8 @@ const Index = () => {
                   color="white"
                   borderRadius="60px"
                   w={{ base: "100px", md: "auto", lg: "auto" }}
-                  maxW={{ base: "90px", md: "150px", lg: "auto" }}
-                  fontSize={{ base: "10px", md: "14px", lg: "16px" }}
+                  maxW={{ base: "80px", md: "150px", lg: "auto" }}
+                  fontSize={{ base: "9px", md: "14px", lg: "16px" }}
                   fontFamily="Poppins, sans-serif"
                 >
                   Event Planning
@@ -529,6 +537,8 @@ const Index = () => {
                 gap={3}
                 mt={3}
                 align="center"
+                justify={{ base: "center", md: "flex-start" }}
+                w="100%"
               >
                 <Button
                   size="sm"
@@ -536,8 +546,8 @@ const Index = () => {
                   color="white"
                   borderRadius="60px"
                   w={{ base: "100px", md: "auto", lg: "auto" }}
-                  maxW={{ base: "90px", md: "150px", lg: "auto" }}
-                  fontSize={{ base: "10px", md: "14px", lg: "16px" }}
+                  maxW={{ base: "80px", md: "150px", lg: "auto" }}
+                  fontSize={{ base: "9px", md: "14px", lg: "16px" }}
                   fontFamily="Poppins, sans-serif"
                 >
                   Collaboration
@@ -548,8 +558,8 @@ const Index = () => {
                   color="white"
                   borderRadius="60px"
                   w={{ base: "100px", md: "auto", lg: "auto" }}
-                  maxW={{ base: "90px", md: "150px", lg: "auto" }}
-                  fontSize={{ base: "10px", md: "14px", lg: "16px" }}
+                  maxW={{ base: "60px", md: "150px", lg: "auto" }}
+                  fontSize={{ base: "9px", md: "14px", lg: "16px" }}
                   fontFamily="Poppins, sans-serif"
                 >
                   Creativity
@@ -560,8 +570,8 @@ const Index = () => {
                   color="white"
                   borderRadius="60px"
                   w={{ base: "100px", md: "auto", lg: "auto" }}
-                  maxW={{ base: "90px", md: "150px", lg: "auto" }}
-                  fontSize={{ base: "10px", md: "14px", lg: "16px" }}
+                  maxW={{ base: "70px", md: "150px", lg: "auto" }}
+                  fontSize={{ base: "9px", md: "14px", lg: "16px" }}
                   fontFamily="Poppins, sans-serif"
                 >
                   Facilitation
@@ -618,6 +628,8 @@ const Index = () => {
                 gap={3}
                 mt={3}
                 align="center"
+                justify={{ base: "center", md: "flex-start" }}
+                w="100%"
               >
                 <Button
                   size="sm"
@@ -625,7 +637,7 @@ const Index = () => {
                   color="white"
                   borderRadius="60px"
                   w={{ base: "100px", md: "auto", lg: "auto" }}
-                  maxW={{ base: "100px", md: "150px", lg: "200px" }}
+                  maxW={{ base: "90px", md: "150px", lg: "200px" }}
                   fontSize={{ base: "9px", md: "14px", lg: "16px" }}
                   fontFamily="Poppins, sans-serif"
                 >
@@ -637,8 +649,8 @@ const Index = () => {
                   color="white"
                   borderRadius="60px"
                   w={{ base: "100px", md: "auto", lg: "auto" }}
-                  maxW={{ base: "90px", md: "150px", lg: "auto" }}
-                  fontSize={{ base: "10px", md: "14px", lg: "16px" }}
+                  maxW={{ base: "70px", md: "150px", lg: "auto" }}
+                  fontSize={{ base: "9px", md: "14px", lg: "16px" }}
                   fontFamily="Poppins, sans-serif"
                 >
                   Scheduling
@@ -650,7 +662,7 @@ const Index = () => {
                   borderRadius="60px"
                   w={{ base: "100px", md: "auto", lg: "auto" }}
                   maxW={{ base: "90px", md: "150px", lg: "auto" }}
-                  fontSize={{ base: "10px", md: "14px", lg: "16px" }}
+                  fontSize={{ base: "9px", md: "14px", lg: "16px" }}
                   fontFamily="Poppins, sans-serif"
                 >
                   Communication
