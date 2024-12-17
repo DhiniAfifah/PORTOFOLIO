@@ -1,4 +1,14 @@
-import { Stack, Image, Text, Box, SimpleGrid, Button } from "@chakra-ui/react";
+import {
+  Stack,
+  Image,
+  Text,
+  Box,
+  SimpleGrid,
+  Button,
+  Flex,
+  Grid,
+  Link,
+} from "@chakra-ui/react";
 import { keyframes } from "@emotion/react";
 import Navbar from "@/components/bahan/navbar";
 import Footer from "@/components/bahan/footer";
@@ -20,7 +30,7 @@ const Index = () => {
       {/* START Background */}
       <Stack
         backgroundColor="#fff"
-        minHeight={{ lg: "570vh", md: "280vh", base: "404vh" }}
+        minHeight={{ lg: "700vh", md: "380vh", base: "504vh" }}
         alignItems="center"
         position="relative"
       >
@@ -121,8 +131,8 @@ const Index = () => {
         <SimpleGrid
           columns={1}
           w={{ base: "87vw", md: "80vw", lg: "65vw" }} // Lebar lebih besar untuk mobile
-          gap={{ base: "50px", md: "35px", lg: "95px" }} // Gap antar kotak lebih kecil di mobile
-          mt={{ base: "50px", md: "100px", lg: "150px" }} // Margin atas lebih kecil di mobile
+          gap={{ base: "80px", md: "80px", lg: "120px" }} // Gap antar kotak lebih kecil di mobile
+          mt={{ base: "100px", md: "100px", lg: "290px" }} // Margin atas lebih kecil di mobile
         >
           {/* Kotak 1 */}
           <Stack
@@ -718,127 +728,179 @@ const Index = () => {
         {/* END Garis Projects */}
 
         {/* START Projects */}
-        <SimpleGrid
-          columns={1}
-          w={{ base: "80vw", md: "75vw", lg: "65vw" }}
-          gap={{ base: "35px", md: "35px", lg: "70px" }}
-          mt={{ base: "50px", md: "100px", lg: "150px" }}
+        <Stack
+          direction={{ base: "row", md: "column", lg: "column" }}
+          align="center"
+          justify="center"
+          gap={6}
+          mt={{ base: "80px", md: "100px", lg: "280px" }}
+          px={{ base: "25px", md: "70px", lg: "190px" }}
         >
-          {/* Kotak 1 */}
-          <Stack
-            direction="row"
-            gap={{ base: "10px", md: "20px", lg: "30px" }}
-            align="center"
+          {/* Project Card 1 */}
+          <Box
+            borderWidth="4px"
+            borderRadius="lg"
+            overflow="hidden"
+            borderColor="#FFCDEA"
+            transition="transform 0.3s ease-in-out"
+            _hover={{ transform: "scale(1.05)" }}
+            w={{ base: "100%", md: "680px", lg: "1520px" }}
+            h={{ base: "auto", md: "620px", lg: "950px" }}
+            p={{ base: 4, md: 4, lg: 14 }}
+            background="linear-gradient(to bottom, #FFCDEA, #FFFFFF)"
           >
-            <Box
-              backgroundColor="#D9D9D9"
-              w={{ base: "100px", md: "150px", lg: "500px" }}
-              h={{ base: "100px", md: "150px", lg: "300px" }}
-              borderRadius="md"
-            />
-            <Stack
-              gap="1px"
-              flex="1"
-              h={{ base: "100px", md: "150px", lg: "300px" }}
+            {/* logo dan teks */}
+            <Flex
+              direction={{ base: "row", md: "row", lg: "row" }}
+              align="center"
+              justify="flex-start"
+              gap={3} // jarak antara logo dan teks
+              p={6}
             >
-              <Text
-                fontSize={{ base: "16px", md: "20px", lg: "30px" }}
-                fontWeight="medium"
-                color="black"
-                fontFamily="Poppins, sans-serif"
-              >
-                Nama Kegiatan 1
-              </Text>
-              <Text
-                fontSize={{ base: "10px", md: "16px", lg: "20px" }}
-                fontWeight="regular"
-                color="#676565"
-                fontFamily="Poppins, sans-serif"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-              </Text>
-            </Stack>
-          </Stack>
+              {/* Logo */}
+              <Image
+                src="/image/logo.png"
+                alt="Project 1 Logo"
+                boxSize={{ base: "40px", md: "50px", lg: "60px" }}
+                objectFit="contain"
+              />
 
-          {/* Kotak 2 */}
-          <Stack
-            direction="row"
-            gap={{ base: "10px", md: "20px", lg: "30px" }}
-            align="center"
-          >
-            <Box
-              backgroundColor="#D9D9D9"
-              w={{ base: "100px", md: "150px", lg: "500px" }}
-              h={{ base: "100px", md: "150px", lg: "300px" }}
-              borderRadius="md"
-            />
+              {/* teks */}
+              <Box>
+                <Text
+                  fontSize={{ base: "2xl", md: "2xl", lg: "4xl" }}
+                  fontWeight="bold"
+                  fontFamily="Poppins, sans-serif"
+                  color="black"
+                  textAlign="left"
+                  mb={1}
+                >
+                  IndoCanvas
+                </Text>
+              </Box>
+            </Flex>
             <Stack
-              gap="1px"
-              flex="1"
-              h={{ base: "100px", md: "150px", lg: "300px" }}
+              direction="column"
+              align="flex-start"
+              justify="flex-start"
+              mt={{ base: "-45px", md: "-25px", lg: "-30px" }}
+              gap={2}
+              p={7}
             >
               <Text
-                fontSize={{ base: "16px", md: "20px", lg: "30px" }}
-                fontWeight="medium"
-                color="black"
+                fontSize={{ base: "15px", md: "18px", lg: "20px" }}
+                color="gray.600"
+                textAlign="left"
                 fontFamily="Poppins, sans-serif"
               >
-                Nama Kegiatan 2
-              </Text>
-              <Text
-                fontSize={{ base: "10px", md: "16px", lg: "20px" }}
-                fontWeight="regular"
-                color="#676565"
-                fontFamily="Poppins, sans-serif"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                A short description of the project goes here. It's concise but
+                provides insight into the project.
               </Text>
             </Stack>
-          </Stack>
 
-          {/* Kotak 3 */}
-          <Stack
-            direction="row"
-            gap={{ base: "10px", md: "20px", lg: "30px" }}
-            align="center"
-          >
-            <Box
-              backgroundColor="#D9D9D9"
-              w={{ base: "100px", md: "150px", lg: "500px" }}
-              h={{ base: "100px", md: "150px", lg: "300px" }}
-              borderRadius="md"
-            />
-            <Stack
-              gap="1px"
-              flex="1"
-              h={{ base: "100px", md: "150px", lg: "300px" }}
+            {/* START GAMBAR PROJECT */}
+            <Grid
+              templateColumns={{ base: "1fr", md: "1fr 1fr", lg: "1fr 1fr" }}
+              gap={8}
+              p={6}
             >
+              {/* Gambar pertama */}
+              <Image
+                src="/image/IC1.png"
+                alt="Project Image 1"
+                boxSize={{ base: "100%", md: "100%", lg: "100%" }}
+                objectFit="cover"
+                borderRadius="lg"
+              />
+
+              {/* Gambar kedua */}
+              <Image
+                src="/image/IC2.png"
+                alt="Project Image 2"
+                boxSize={{ base: "100%", md: "100%", lg: "100%" }}
+                objectFit="cover"
+                borderRadius="lg"
+              />
+            </Grid>
+            {/* START BAGIAN Why Hire Me */}
+            <Stack p={6} mt={{ base: "2px", md: "2px", lg: "5px" }}>
+              {/* Teks "Why hire me?" */}
               <Text
-                fontSize={{ base: "16px", md: "20px", lg: "30px" }}
+                fontSize={{ base: "15px", md: "2xl", lg: "4xl" }}
                 fontWeight="medium"
+                fontFamily="Poppins, sans-serif"
                 color="black"
-                fontFamily="Poppins, sans-serif"
+                textAlign="left"
               >
-                Nama Kegiatan 3
-              </Text>
-              <Text
-                fontSize={{ base: "10px", md: "16px", lg: "20px" }}
-                fontWeight="regular"
-                color="#676565"
-                fontFamily="Poppins, sans-serif"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi
+                Tech Behind the Scenes
               </Text>
             </Stack>
-          </Stack>
-        </SimpleGrid>
+
+            {/* START logo-tools yang digunakan */}
+            <Flex
+              direction="row"
+              justify="left"
+              gap={{ base: "4", md: "10", lg: "9" }}
+              p={8}
+              wrap="wrap"
+              mt={{ base: "-45px", md: "-25px", lg: "-20px" }}
+            >
+              {/* Logo 1 */}
+              <Image
+                src="/image/logo/bootstrap.png"
+                alt="Tool 1"
+                boxSize={{ base: "30px", md: "40px", lg: "90px" }}
+                objectFit="contain"
+              />
+              {/* Logo 2 */}
+              <Image
+                src="/image/logo/react.png"
+                alt="Tool 2"
+                boxSize={{ base: "30px", md: "40px", lg: "80px" }}
+                objectFit="contain"
+              />
+            </Flex>
+            {/* END logo-tools yang digunakan */}
+
+            {/* START Logo Internet dan GitHub */}
+            <Flex
+              direction="row"
+              justify="right"
+              gap={5}
+              p={3}
+              mt={{ base: "-20px", md: "-25px", lg: "-20px" }}
+            >
+              {/* Logo Internet */}
+              <Link
+                href="https://indo-canvas.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src="/image/logo/internet.png"
+                  alt="Internet"
+                  boxSize={{ base: "20px", md: "30px", lg: "40px" }}
+                  objectFit="contain"
+                />
+              </Link>
+
+              {/* Logo GitHub */}
+              <Link
+                href="https://www.example.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src="/image/logo/git.png"
+                  alt="GitHub"
+                  boxSize={{ base: "20px", md: "30px", lg: "40px" }}
+                  objectFit="contain"
+                />
+              </Link>
+            </Flex>
+            {/* END Logo Internet dan GitHub */}
+          </Box>
+        </Stack>
         {/* END Projects */}
       </Stack>
       {/* END Background */}
