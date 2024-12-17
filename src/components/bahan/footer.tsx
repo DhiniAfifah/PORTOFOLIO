@@ -123,6 +123,17 @@ const Footer = () => {
             </Link>
           ))}
         </Stack>
+        {/* Copyright */}
+        <Text
+          fontSize="sm"
+          fontWeight={{ base: "10px", md: "20px", lg: "20px" }}
+          color="black"
+          textAlign={{ base: "center", md: "left" }}
+          mt={14}
+          fontFamily="'Poppins', sans-serif"
+        >
+          ©2024 Made with love
+        </Text>
       </Box>
       {/* END Footer */}
     </>
