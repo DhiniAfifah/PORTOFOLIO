@@ -22,6 +22,16 @@ const pulseAnimation = keyframes`
   }
 `;
 
+// Animasi "slide-from-top"
+const slideFromTop = keyframes`
+  0% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+`;
+
 const Index = () => {
   return (
     <>
@@ -30,7 +40,7 @@ const Index = () => {
       {/* START Background */}
       <Stack
         backgroundColor="#fff"
-        minHeight={{ lg: "700vh", md: "380vh", base: "504vh" }}
+        minHeight={{ lg: "1130vh", md: "627vh", base: "960vh" }}
         alignItems="center"
         position="relative"
       >
@@ -729,21 +739,19 @@ const Index = () => {
 
         {/* START Projects */}
         <Stack
-          direction={{ base: "row", md: "column", lg: "column" }}
+          direction={{ base: "column", md: "column", lg: "column" }}
           align="center"
           justify="center"
-          gap={6}
+          gap={{ base: "60px", md: "150px", lg: "140px" }}
           mt={{ base: "80px", md: "100px", lg: "280px" }}
           px={{ base: "25px", md: "70px", lg: "190px" }}
         >
-          {/* Project Card 1 */}
+          {/* CARD 1 */}
           <Box
             borderWidth="4px"
             borderRadius="lg"
             overflow="hidden"
             borderColor="#FFCDEA"
-            transition="transform 0.3s ease-in-out"
-            _hover={{ transform: "scale(1.05)" }}
             w={{ base: "100%", md: "680px", lg: "1520px" }}
             h={{ base: "auto", md: "620px", lg: "950px" }}
             p={{ base: 4, md: 4, lg: 14 }}
@@ -768,7 +776,7 @@ const Index = () => {
               {/* teks */}
               <Box>
                 <Text
-                  fontSize={{ base: "2xl", md: "2xl", lg: "4xl" }}
+                  fontSize={{ base: "xl", md: "2xl", lg: "4xl" }}
                   fontWeight="bold"
                   fontFamily="Poppins, sans-serif"
                   color="black"
@@ -867,7 +875,7 @@ const Index = () => {
               direction="row"
               justify="right"
               gap={5}
-              p={3}
+              p={7}
               mt={{ base: "-20px", md: "-25px", lg: "-20px" }}
             >
               {/* Logo Internet */}
@@ -880,6 +888,353 @@ const Index = () => {
                   src="/image/logo/internet.png"
                   alt="Internet"
                   boxSize={{ base: "20px", md: "30px", lg: "40px" }}
+                  _hover={{
+                    animation: `${slideFromTop} 10s ease forwards`,
+                  }}
+                  objectFit="contain"
+                />
+              </Link>
+
+              {/* Logo GitHub */}
+              <Link
+                href="https://github.com/owin40/IndoCanvas"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src="/image/logo/git.png"
+                  alt="GitHub"
+                  boxSize={{ base: "20px", md: "30px", lg: "40px" }}
+                  _hover={{
+                    animation: `${slideFromTop} 10s ease forwards`,
+                  }}
+                  objectFit="contain"
+                />
+              </Link>
+            </Flex>
+            {/* END Logo Internet dan GitHub */}
+          </Box>
+
+          {/* CARD 2 */}
+          <Box
+            borderWidth="4px"
+            borderRadius="lg"
+            overflow="hidden"
+            borderColor="#FFCDEA"
+            w={{ base: "100%", md: "680px", lg: "1520px" }}
+            h={{ base: "auto", md: "700px", lg: "1200px" }}
+            p={{ base: 4, md: 4, lg: 14 }}
+            background="linear-gradient(to bottom, #FFCDEA, #FFFFFF)"
+          >
+            {/* logo dan teks */}
+            <Flex
+              direction={{ base: "row", md: "row", lg: "row" }}
+              align="center"
+              justify="flex-start"
+              gap={3} // jarak antara logo dan teks
+              p={6}
+            >
+              {/* Logo */}
+              <Image
+                src="/image/MPL.png"
+                alt="Project 1 Logo"
+                boxSize={{ base: "40px", md: "50px", lg: "150px" }}
+                objectFit="contain"
+              />
+
+              {/* teks */}
+              <Box>
+                <Text
+                  fontSize={{ base: "xl", md: "2xl", lg: "4xl" }}
+                  fontWeight="bold"
+                  fontFamily="Poppins, sans-serif"
+                  color="black"
+                  textAlign="left"
+                  mb={1}
+                >
+                  Mobile Application
+                </Text>
+              </Box>
+            </Flex>
+            <Stack
+              direction="column"
+              align="flex-start"
+              justify="flex-start"
+              mt={{ base: "-45px", md: "-25px", lg: "-30px" }}
+              gap={2}
+              p={7}
+            >
+              <Text
+                fontSize={{ base: "15px", md: "18px", lg: "20px" }}
+                color="gray.600"
+                textAlign="left"
+                fontFamily="Poppins, sans-serif"
+              >
+                A short description of the project goes here. It's concise but
+                provides insight into the project.
+              </Text>
+            </Stack>
+
+            {/* START GAMBAR PROJECT */}
+            <Grid
+              templateColumns={{ base: "1fr", md: "1fr 1fr", lg: "1fr 1fr" }}
+              gap={8}
+              p={6}
+            >
+              {/* Gambar pertama */}
+              <Image
+                src="/image/MP.png"
+                alt="Project Image 1"
+                boxSize={{ base: "100%", md: "100%", lg: "100%" }}
+                objectFit="cover"
+                borderRadius="lg"
+              />
+
+              {/* Gambar kedua */}
+              <Image
+                src="/image/MP1.png"
+                alt="Project Image 2"
+                boxSize={{ base: "100%", md: "100%", lg: "100%" }}
+                objectFit="cover"
+                borderRadius="lg"
+              />
+            </Grid>
+            {/* START BAGIAN Why Hire Me */}
+            <Stack p={6} mt={{ base: "2px", md: "2px", lg: "5px" }}>
+              {/* Teks "Why hire me?" */}
+              <Text
+                fontSize={{ base: "15px", md: "2xl", lg: "4xl" }}
+                fontWeight="medium"
+                fontFamily="Poppins, sans-serif"
+                color="black"
+                textAlign="left"
+              >
+                Tech Behind the Scenes
+              </Text>
+            </Stack>
+
+            {/* START logo-tools yang digunakan */}
+            <Flex
+              direction="row"
+              justify="left"
+              gap={{ base: "4", md: "10", lg: "5" }}
+              p={8}
+              wrap="wrap"
+              mt={{ base: "-45px", md: "-25px", lg: "-20px" }}
+            >
+              {/* Logo 1 */}
+              <Image
+                src="/image/logo/Kotlin.png"
+                alt="Tool 1"
+                boxSize={{ base: "30px", md: "40px", lg: "50px" }}
+                objectFit="contain"
+              />
+              {/* Logo 2 */}
+              <Image
+                src="/image/logo/figma.png"
+                alt="Tool 1"
+                boxSize={{ base: "30px", md: "40px", lg: "60px" }}
+                objectFit="contain"
+              />
+              {/* Logo 3 */}
+              <Image
+                src="/image/logo/FireBase.png"
+                alt="Tool 1"
+                boxSize={{ base: "30px", md: "40px", lg: "60px" }}
+                objectFit="contain"
+              />
+              {/* Logo 4 */}
+              <Image
+                src="/image/logo/AndroidStudio.png"
+                alt="Tool 1"
+                boxSize={{ base: "30px", md: "40px", lg: "60px" }}
+                objectFit="contain"
+              />
+            </Flex>
+            {/* END logo-tools yang digunakan */}
+
+            {/* START Logo Internet dan GitHub */}
+            <Flex
+              direction="row"
+              justify="right"
+              gap={5}
+              p={7}
+              mt={{ base: "-20px", md: "-25px", lg: "-20px" }}
+            >
+              {/* Logo Internet */}
+              <Link
+                href="https://www.example.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src="/image/logo/internet.png"
+                  alt="Internet"
+                  boxSize={{ base: "20px", md: "30px", lg: "40px" }}
+                  _hover={{
+                    animation: `${slideFromTop} 10s ease forwards`,
+                  }}
+                  objectFit="contain"
+                />
+              </Link>
+
+              {/* Logo GitHub */}
+              <Link
+                href="https://github.com/ouin40/MyPlant"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src="/image/logo/git.png"
+                  alt="GitHub"
+                  boxSize={{ base: "20px", md: "30px", lg: "40px" }}
+                  _hover={{
+                    animation: `${slideFromTop} 10s ease forwards`,
+                  }}
+                  objectFit="contain"
+                />
+              </Link>
+            </Flex>
+            {/* END Logo Internet dan GitHub */}
+          </Box>
+
+          {/* CARD 3 */}
+          <Box
+            borderWidth="4px"
+            borderRadius="lg"
+            overflow="hidden"
+            borderColor="#FFCDEA"
+            w={{ base: "100%", md: "680px", lg: "1520px" }}
+            h={{ base: "auto", md: "620px", lg: "1000px" }}
+            p={{ base: 4, md: 4, lg: 14 }}
+            background="linear-gradient(to bottom, #FFCDEA, #FFFFFF)"
+          >
+            {/* logo dan teks */}
+            <Flex
+              direction={{ base: "row", md: "row", lg: "row" }}
+              align="center"
+              justify="flex-start"
+              gap={3} // jarak antara logo dan teks
+              p={6}
+            >
+              {/* Logo */}
+              <Image
+                src="/image/ATEL.png"
+                alt="Project 1 Logo"
+                boxSize={{ base: "40px", md: "50px", lg: "80px" }}
+                objectFit="contain"
+              />
+
+              {/* teks */}
+              <Box>
+                <Text
+                  fontSize={{ base: "2xl", md: "2xl", lg: "4xl" }}
+                  fontWeight="bold"
+                  fontFamily="Poppins, sans-serif"
+                  color="black"
+                  textAlign="left"
+                  mb={1}
+                >
+                  ATE
+                </Text>
+              </Box>
+            </Flex>
+            <Stack
+              direction="column"
+              align="flex-start"
+              justify="flex-start"
+              mt={{ base: "-45px", md: "-25px", lg: "-30px" }}
+              gap={2}
+              p={7}
+            >
+              <Text
+                fontSize={{ base: "15px", md: "18px", lg: "20px" }}
+                color="gray.600"
+                textAlign="left"
+                fontFamily="Poppins, sans-serif"
+              >
+                Food Delivery App Prototype
+              </Text>
+            </Stack>
+
+            {/* START GAMBAR PROJECT */}
+            <Grid
+              templateColumns={{ base: "1fr", md: "1fr 1fr", lg: "1fr 1fr" }}
+              gap={8}
+              p={6}
+            >
+              {/* Gambar pertama */}
+              <Image
+                src="/image/ATE.png"
+                alt="Project Image 1"
+                boxSize={{ base: "100%", md: "100%", lg: "100%" }}
+                objectFit="cover"
+                borderRadius="lg"
+              />
+
+              {/* Gambar kedua */}
+              <Image
+                src="/image/ATE2.png"
+                alt="Project Image 2"
+                boxSize={{ base: "100%", md: "100%", lg: "100%" }}
+                objectFit="cover"
+                borderRadius="lg"
+              />
+            </Grid>
+            {/* START BAGIAN Why Hire Me */}
+            <Stack p={6} mt={{ base: "2px", md: "2px", lg: "5px" }}>
+              {/* Teks "Why hire me?" */}
+              <Text
+                fontSize={{ base: "15px", md: "2xl", lg: "4xl" }}
+                fontWeight="medium"
+                fontFamily="Poppins, sans-serif"
+                color="black"
+                textAlign="left"
+              >
+                Tech Behind the Scenes
+              </Text>
+            </Stack>
+
+            {/* START logo-tools yang digunakan */}
+            <Flex
+              direction="row"
+              justify="left"
+              gap={{ base: "4", md: "10", lg: "9" }}
+              p={8}
+              wrap="wrap"
+              mt={{ base: "-45px", md: "-25px", lg: "-20px" }}
+            >
+              {/* Logo 1 */}
+              <Image
+                src="/image/logo/figma.png"
+                alt="Tool 1"
+                boxSize={{ base: "30px", md: "40px", lg: "70px" }}
+                objectFit="contain"
+              />
+            </Flex>
+            {/* END logo-tools yang digunakan */}
+
+            {/* START Logo Internet dan GitHub */}
+            <Flex
+              direction="row"
+              justify="right"
+              gap={5}
+              p={7}
+              mt={{ base: "-20px", md: "-25px", lg: "-20px" }}
+            >
+              {/* Logo Internet */}
+              <Link
+                href="https://www.example.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src="/image/logo/internet.png"
+                  alt="Internet"
+                  boxSize={{ base: "20px", md: "30px", lg: "40px" }}
+                  _hover={{
+                    animation: `${slideFromTop} 10s ease forwards`,
+                  }}
                   objectFit="contain"
                 />
               </Link>
@@ -894,6 +1249,332 @@ const Index = () => {
                   src="/image/logo/git.png"
                   alt="GitHub"
                   boxSize={{ base: "20px", md: "30px", lg: "40px" }}
+                  _hover={{
+                    animation: `${slideFromTop} 10s ease forwards`,
+                  }}
+                  objectFit="contain"
+                />
+              </Link>
+            </Flex>
+            {/* END Logo Internet dan GitHub */}
+          </Box>
+
+          {/* CARD 4 */}
+          <Box
+            borderWidth="4px"
+            borderRadius="lg"
+            overflow="hidden"
+            borderColor="#FFCDEA"
+            w={{ base: "100%", md: "680px", lg: "1520px" }}
+            h={{ base: "auto", md: "700px", lg: "1130px" }}
+            p={{ base: 4, md: 4, lg: 14 }}
+            background="linear-gradient(to bottom, #FFCDEA, #FFFFFF)"
+          >
+            {/* logo dan teks */}
+            <Flex
+              direction={{ base: "row", md: "row", lg: "row" }}
+              align="center"
+              justify="flex-start"
+              gap={3} // jarak antara logo dan teks
+              p={6}
+            >
+              {/* Logo */}
+              <Image
+                src="/image/BRNL.png"
+                alt="Project 1 Logo"
+                boxSize={{ base: "40px", md: "50px", lg: "100px" }}
+                objectFit="contain"
+              />
+
+              {/* teks */}
+              <Box>
+                <Text
+                  fontSize={{ base: "xl", md: "2xl", lg: "4xl" }}
+                  fontWeight="bold"
+                  fontFamily="Poppins, sans-serif"
+                  color="black"
+                  textAlign="left"
+                  mb={1}
+                >
+                  Brenna - Event Planner
+                </Text>
+              </Box>
+            </Flex>
+            <Stack
+              direction="column"
+              align="flex-start"
+              justify="flex-start"
+              mt={{ base: "-45px", md: "-25px", lg: "-30px" }}
+              gap={2}
+              p={7}
+            >
+              <Text
+                fontSize={{ base: "15px", md: "18px", lg: "20px" }}
+                color="gray.600"
+                textAlign="left"
+                fontFamily="Poppins, sans-serif"
+              >
+                A short description of the project goes here. It's concise but
+                provides insight into the project.
+              </Text>
+            </Stack>
+
+            {/* START GAMBAR PROJECT */}
+            <Grid
+              templateColumns={{ base: "1fr", md: "1fr 1fr", lg: "1fr 1fr" }}
+              gap={8}
+              p={6}
+            >
+              {/* Gambar pertama */}
+              <Image
+                src="/image/BRN.png"
+                alt="Project Image 1"
+                boxSize={{ base: "100%", md: "100%", lg: "100%" }}
+                objectFit="cover"
+                borderRadius="lg"
+              />
+
+              {/* Gambar kedua */}
+              <Image
+                src="/image/BRN1.png"
+                alt="Project Image 2"
+                boxSize={{ base: "100%", md: "100%", lg: "100%" }}
+                objectFit="cover"
+                borderRadius="lg"
+              />
+            </Grid>
+            {/* START BAGIAN Why Hire Me */}
+            <Stack p={6} mt={{ base: "2px", md: "2px", lg: "5px" }}>
+              {/* Teks "Why hire me?" */}
+              <Text
+                fontSize={{ base: "15px", md: "2xl", lg: "4xl" }}
+                fontWeight="medium"
+                fontFamily="Poppins, sans-serif"
+                color="black"
+                textAlign="left"
+              >
+                Tech Behind the Scenes
+              </Text>
+            </Stack>
+
+            {/* START logo-tools yang digunakan */}
+            <Flex
+              direction="row"
+              justify="left"
+              gap={{ base: "4", md: "10", lg: "9" }}
+              p={8}
+              wrap="wrap"
+              mt={{ base: "-45px", md: "-25px", lg: "-20px" }}
+            >
+              {/* Logo 1 */}
+              <Image
+                src="/image/logo/Laravel.png"
+                alt="Tool 1"
+                boxSize={{ base: "30px", md: "40px", lg: "90px" }}
+                objectFit="contain"
+              />
+            </Flex>
+            {/* END logo-tools yang digunakan */}
+
+            {/* START Logo Internet dan GitHub */}
+            <Flex
+              direction="row"
+              justify="right"
+              gap={5}
+              p={7}
+              mt={{ base: "-20px", md: "-25px", lg: "-20px" }}
+            >
+              {/* Logo Internet */}
+              <Link
+                href="https://www.example.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src="/image/logo/internet.png"
+                  alt="Internet"
+                  boxSize={{ base: "20px", md: "30px", lg: "40px" }}
+                  _hover={{
+                    animation: `${slideFromTop} 10s ease forwards`,
+                  }}
+                  objectFit="contain"
+                />
+              </Link>
+
+              {/* Logo GitHub */}
+              <Link
+                href="https://github.com/owin40/event-planner"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src="/image/logo/git.png"
+                  alt="GitHub"
+                  boxSize={{ base: "20px", md: "30px", lg: "40px" }}
+                  _hover={{
+                    animation: `${slideFromTop} 10s ease forwards`,
+                  }}
+                  objectFit="contain"
+                />
+              </Link>
+            </Flex>
+            {/* END Logo Internet dan GitHub */}
+          </Box>
+          {/* CARD 5 */}
+          <Box
+            borderWidth="4px"
+            borderRadius="lg"
+            overflow="hidden"
+            borderColor="#FFCDEA"
+            w={{ base: "100%", md: "680px", lg: "1520px" }}
+            h={{ base: "auto", md: "620px", lg: "950px" }}
+            p={{ base: 4, md: 4, lg: 14 }}
+            background="linear-gradient(to bottom, #FFCDEA, #FFFFFF)"
+          >
+            {/* logo dan teks */}
+            <Flex
+              direction={{ base: "row", md: "row", lg: "row" }}
+              align="center"
+              justify="flex-start"
+              gap={3} // jarak antara logo dan teks
+              p={6}
+            >
+              {/* Logo */}
+              <Image
+                src="/image/GameL.png"
+                alt="Project 1 Logo"
+                boxSize={{ base: "40px", md: "50px", lg: "70px" }}
+                objectFit="contain"
+              />
+
+              {/* teks */}
+              <Box>
+                <Text
+                  fontSize={{ base: "xl", md: "2xl", lg: "4xl" }}
+                  fontWeight="bold"
+                  fontFamily="Poppins, sans-serif"
+                  color="black"
+                  textAlign="left"
+                  mb={1}
+                >
+                  Froggy Clicker
+                </Text>
+              </Box>
+            </Flex>
+            <Stack
+              direction="column"
+              align="flex-start"
+              justify="flex-start"
+              mt={{ base: "-45px", md: "-25px", lg: "-30px" }}
+              gap={2}
+              p={7}
+            >
+              <Text
+                fontSize={{ base: "15px", md: "18px", lg: "20px" }}
+                color="gray.600"
+                textAlign="left"
+                fontFamily="Poppins, sans-serif"
+              >
+                A short description of the project goes here. It's concise but
+                provides insight into the project.
+              </Text>
+            </Stack>
+
+            {/* START GAMBAR PROJECT */}
+            <Grid
+              templateColumns={{ base: "1fr", md: "1fr 1fr", lg: "1fr 1fr" }}
+              gap={8}
+              p={6}
+            >
+              {/* Gambar pertama */}
+              <Image
+                src="/image/Game.png"
+                alt="Project Image 1"
+                boxSize={{ base: "100%", md: "100%", lg: "100%" }}
+                objectFit="cover"
+                borderRadius="lg"
+              />
+
+              {/* Gambar kedua */}
+              <Image
+                src="/image/Game1.png"
+                alt="Project Image 2"
+                boxSize={{ base: "100%", md: "100%", lg: "100%" }}
+                objectFit="cover"
+                borderRadius="lg"
+              />
+            </Grid>
+            {/* START BAGIAN Why Hire Me */}
+            <Stack p={6} mt={{ base: "2px", md: "2px", lg: "5px" }}>
+              {/* Teks "Why hire me?" */}
+              <Text
+                fontSize={{ base: "15px", md: "2xl", lg: "4xl" }}
+                fontWeight="medium"
+                fontFamily="Poppins, sans-serif"
+                color="black"
+                textAlign="left"
+              >
+                Tech Behind the Scenes
+              </Text>
+            </Stack>
+
+            {/* START logo-tools yang digunakan */}
+            <Flex
+              direction="row"
+              justify="left"
+              gap={{ base: "4", md: "10", lg: "9" }}
+              p={8}
+              wrap="wrap"
+              mt={{ base: "-45px", md: "-25px", lg: "-20px" }}
+            >
+              {/* Logo 1 */}
+              <Image
+                src="/image/logo/bootstrap.png"
+                alt="Tool 1"
+                boxSize={{ base: "30px", md: "40px", lg: "90px" }}
+                objectFit="contain"
+              />
+            </Flex>
+            {/* END logo-tools yang digunakan */}
+
+            {/* START Logo Internet dan GitHub */}
+            <Flex
+              direction="row"
+              justify="right"
+              gap={5}
+              p={7}
+              mt={{ base: "-20px", md: "-25px", lg: "-20px" }}
+            >
+              {/* Logo Internet */}
+              <Link
+                href="https://www.example.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src="/image/logo/internet.png"
+                  alt="Internet"
+                  boxSize={{ base: "20px", md: "30px", lg: "40px" }}
+                  _hover={{
+                    animation: `${slideFromTop} 10s ease forwards`,
+                  }}
+                  objectFit="contain"
+                />
+              </Link>
+
+              {/* Logo GitHub */}
+              <Link
+                href="https://www.example.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src="/image/logo/git.png"
+                  alt="GitHub"
+                  boxSize={{ base: "20px", md: "30px", lg: "40px" }}
+                  _hover={{
+                    animation: `${slideFromTop} 10s ease forwards`,
+                  }}
                   objectFit="contain"
                 />
               </Link>
@@ -904,7 +1585,6 @@ const Index = () => {
         {/* END Projects */}
       </Stack>
       {/* END Background */}
-
       <Footer />
     </>
   );
