@@ -9,7 +9,7 @@ const About = () => {
       {/* START Background */}
       <Stack
         backgroundColor="#fff"
-        minHeight={{ lg: "300vh", md: "290vh", base: "355vh" }}
+        minHeight={{ lg: "300vh", md: "270vh", base: "335vh" }}
         alignItems="center"
         position="relative"
       >
@@ -86,29 +86,26 @@ const About = () => {
           {/* START desc */}
           <Stack gap={"2rem"}>
             <Text
-              fontSize={{ base: "18px", md: "25px", lg: "30px" }}
+              fontSize={{ base: "16px", md: "25px", lg: "30px" }}
               fontWeight="regular"
               fontFamily="Poppins, sans-serif"
               color="black"
-              textAlign={{ base: "center", md: "start" }}
+              textAlign={{ base: "center", lg: "justify", md: "start" }}
             >
-              Hello, I’m Dhini Afifah, a tech enthusiast from Universitas
-              Multimedia Nusantara, blending creativity with logic. From
-              building websites to securing systems, I’m passionate about making
-              technology work for people. My journey in Informatics has given me
-              the tools to turn complex ideas into intuitive, user-centric
-              solutions.
+              Hi, I’m Dhini Afifah, a tech enthusiast from Universitas
+              Multimedia Nusantara. I blend creativity with logic to design
+              intuitive web solutions and secure systems, turning complex ideas
+              into seamless experiences.
             </Text>
             <Text
-              fontSize={{ base: "18px", md: "25px", lg: "30px" }}
+              fontSize={{ base: "16px", md: "25px", lg: "30px" }}
               fontWeight="regular"
               fontFamily="Poppins, sans-serif"
               color="black"
-              textAlign={{ base: "center", md: "start" }}
+              textAlign={{ base: "center", lg: "justify", md: "start" }}
             >
-              Driven by curiosity and collaboration, I’m always on the lookout
-              for new ways to innovate and improve. I’m here to bridge the gap
-              between data, design, and user experience, one project at a time.
+              Driven by curiosity and collaboration, I strive to bridge data,
+              design, and user experience to create impactful projects.
             </Text>
           </Stack>
           {/* END desc */}
@@ -279,11 +276,11 @@ const About = () => {
         {/* START BAGIAN Hobby */}
         <Stack
           w={"75vw"}
-          mt={{ md: "13rem", base: "2rem", lg: "15rem" }}
+          mt={{ md: "13rem", base: "7rem", lg: "15rem" }}
           align="start"
           gap="1rem"
         >
-          {/* Teks "Why hire me?" */}
+          {/* Teks "Me Outside of Work" */}
           <Text
             fontSize={{ base: "3xl", md: "5xl", lg: "80px" }}
             fontWeight="medium"

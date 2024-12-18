@@ -30,7 +30,7 @@ const Index = () => {
       {/* START Background */}
       <Stack
         backgroundColor="#fff"
-        minHeight={{ lg: "1260vh", md: "627vh", base: "1155vh" }}
+        minHeight={{ lg: "1280vh", md: "817vh", base: "1050vh" }}
         alignItems="center"
         position="relative"
       >
@@ -102,7 +102,7 @@ const Index = () => {
         </Stack>
         {/* END Gradient and Emoji */}
 
-        {/* -------------------------------------------- START Garis What ---------------------------------------------------------*/}
+        {/* START Garis What */}
         <Stack direction="column" width="100%" align="flex-start" gap={0}>
           <Box
             backgroundColor="#FFCDEA"
@@ -192,10 +192,10 @@ const Index = () => {
               >
                 {/* Deskripsi */}
                 <Text
-                  fontSize={{ base: "md", md: "lg", lg: "xl" }}
+                  fontSize={{ base: "xs", md: "lg", lg: "xl" }}
                   color="black"
                   fontFamily="Poppins, sans-serif"
-                  textAlign="left"
+                  textAlign={{ base: "center", md: "left" }}
                 >
                   Collaborated with a team to develop a user-friendly website.
                   Ensured design alignment, conducted functionality tests, and
@@ -262,10 +262,10 @@ const Index = () => {
               >
                 {/* Deskripsi */}
                 <Text
-                  fontSize={{ base: "md", md: "lg", lg: "xl" }}
+                  fontSize={{ base: "xs", md: "lg", lg: "xl" }}
                   color="black"
                   fontFamily="Poppins, sans-serif"
-                  textAlign="left"
+                  textAlign={{ base: "center", md: "left" }}
                 >
                   Managed and updated website content to ensure data accuracy.
                   Participated in resolving technical issues and improved the
@@ -331,10 +331,10 @@ const Index = () => {
               >
                 {/* Deskripsi */}
                 <Text
-                  fontSize={{ base: "md", md: "lg", lg: "xl" }}
+                  fontSize={{ base: "xs", md: "lg", lg: "xl" }}
                   color="black"
                   fontFamily="Poppins, sans-serif"
-                  textAlign="left"
+                  textAlign={{ base: "center", md: "left" }}
                 >
                   Managed attendance for 300+ committee members and ensured
                   smooth event operations. Handled communications, student
@@ -400,10 +400,10 @@ const Index = () => {
               >
                 {/* Deskripsi */}
                 <Text
-                  fontSize={{ base: "md", md: "lg", lg: "xl" }}
+                  fontSize={{ base: "xs", md: "lg", lg: "xl" }}
                   color="black"
                   fontFamily="Poppins, sans-serif"
-                  textAlign="left"
+                  textAlign={{ base: "center", md: "left" }}
                 >
                   Guided new students through their orientation to the
                   Informatics program. Led interactive activities and
@@ -470,10 +470,10 @@ const Index = () => {
               >
                 {/* Deskripsi */}
                 <Text
-                  fontSize={{ base: "md", md: "lg", lg: "xl" }}
+                  fontSize={{ base: "xs", md: "lg", lg: "xl" }}
                   color="black"
                   fontFamily="Poppins, sans-serif"
-                  textAlign="left"
+                  textAlign={{ base: "center", md: "left" }}
                 >
                   Supervised elementary students, teaching eco-literacy and
                   environmental awareness through interactive activities.
@@ -539,10 +539,10 @@ const Index = () => {
               >
                 {/* Deskripsi */}
                 <Text
-                  fontSize={{ base: "md", md: "lg", lg: "xl" }}
+                  fontSize={{ base: "xs", md: "lg", lg: "xl" }}
                   color="black"
                   fontFamily="Poppins, sans-serif"
-                  textAlign="left"
+                  textAlign={{ base: "center", md: "left" }}
                 >
                   Managed inventory, prepared event schedules, and handled
                   volunteer attendance. Coordinated logistics and ensured smooth
@@ -602,7 +602,7 @@ const Index = () => {
             overflow="hidden"
             borderColor="#FFCDEA"
             w={{ base: "100%", md: "680px", lg: "1520px" }}
-            h={{ base: "auto", md: "620px", lg: "950px" }}
+            h={{ base: "auto", md: "710px", lg: "950px" }}
             p={{ base: 4, md: 4, lg: 14 }}
             background="linear-gradient(to bottom, #FFCDEA, #FFFFFF)"
           >
@@ -645,13 +645,16 @@ const Index = () => {
               p={7}
             >
               <Text
-                fontSize={{ base: "15px", md: "18px", lg: "20px" }}
+                fontSize={{ base: "13px", md: "18px", lg: "19px" }}
                 color="gray.600"
-                textAlign="left"
+                textAlign={{ base: "left", md: "justify" }}
                 fontFamily="Poppins, sans-serif"
               >
-                A short description of the project goes here. It's concise but
-                provides insight into the project.
+                A dynamic platform showcasing Indonesian art and heritage.
+                Featuring parallax scrolling with React-spring and CSS,
+                optimized visuals, and curated cultural content like traditional
+                paintings, the site offers an interactive and immersive user
+                experience.
               </Text>
             </Stack>
 
@@ -702,16 +705,42 @@ const Index = () => {
             >
               {/* Logo 1 */}
               <Image
-                src="/image/logo/bootstrap.png"
+                src="/image/logo/PS.png"
                 alt="Tool 1"
-                boxSize={{ base: "30px", md: "40px", lg: "90px" }}
+                boxSize={{ base: "24px", md: "40px", lg: "70px" }}
                 objectFit="contain"
               />
               {/* Logo 2 */}
               <Image
+                src="/image/logo/CSS.png"
+                alt="Tool 2"
+                boxSize={{ base: "24px", md: "40px", lg: "65px" }}
+                objectFit="contain"
+              />
+              {/* Logo 3 */}
+              <Image
+                src="/image/logo/HTML.png"
+                alt="Tool 2"
+                boxSize={{ base: "24px", md: "40px", lg: "65px" }}
+                objectFit="contain"
+              />
+              {/* Logo 4 */}
+              <Image
+                src="/image/logo/JS.png"
+                alt="Tool 2"
+                boxSize={{ base: "24px", md: "40px", lg: "65px" }}
+                objectFit="contain"
+              />
+              <Image
+                src="/image/logo/bootstrap.png"
+                alt="Tool 2"
+                boxSize={{ base: "24px", md: "40px", lg: "65px" }}
+                objectFit="contain"
+              />
+              <Image
                 src="/image/logo/react.png"
                 alt="Tool 2"
-                boxSize={{ base: "30px", md: "40px", lg: "80px" }}
+                boxSize={{ base: "24px", md: "40px", lg: "65px" }}
                 objectFit="contain"
               />
             </Flex>
@@ -769,7 +798,7 @@ const Index = () => {
             overflow="hidden"
             borderColor="#FFCDEA"
             w={{ base: "100%", md: "680px", lg: "1520px" }}
-            h={{ base: "auto", md: "700px", lg: "1200px" }}
+            h={{ base: "auto", md: "750px", lg: "1140px" }}
             p={{ base: 4, md: 4, lg: 14 }}
             background="linear-gradient(to bottom, #FFCDEA, #FFFFFF)"
           >
@@ -778,8 +807,9 @@ const Index = () => {
               direction={{ base: "row", md: "row", lg: "row" }}
               align="center"
               justify="flex-start"
-              gap={3} // jarak antara logo dan teks
-              p={6}
+              mt={{ base: "-17px", md: "-25px", lg: "-40px" }}
+              gap={3} // jarak logo dan teks
+              p={7}
             >
               {/* Logo */}
               <Image
@@ -792,7 +822,7 @@ const Index = () => {
               {/* teks */}
               <Box>
                 <Text
-                  fontSize={{ base: "xl", md: "2xl", lg: "4xl" }}
+                  fontSize={{ base: "lg", md: "2xl", lg: "4xl" }}
                   fontWeight="bold"
                   fontFamily="Poppins, sans-serif"
                   color="black"
@@ -807,18 +837,20 @@ const Index = () => {
               direction="column"
               align="flex-start"
               justify="flex-start"
-              mt={{ base: "-45px", md: "-25px", lg: "-30px" }}
+              mt={{ base: "-45px", md: "-25px", lg: "-70px" }}
               gap={2}
               p={7}
             >
               <Text
-                fontSize={{ base: "15px", md: "18px", lg: "20px" }}
+                fontSize={{ base: "13px", md: "18px", lg: "19px" }}
                 color="gray.600"
-                textAlign="left"
+                textAlign={{ base: "left", md: "justify" }}
                 fontFamily="Poppins, sans-serif"
               >
-                A short description of the project goes here. It's concise but
-                provides insight into the project.
+                A modern app designed for effortless plant care management.
+                Featuring an intuitive interface and Firebase integration for
+                real-time data storage, user authentication, and the ability to
+                capture and track plant growth through photos.
               </Text>
             </Stack>
 
@@ -873,21 +905,21 @@ const Index = () => {
               <Image
                 src="/image/logo/Kotlin.png"
                 alt="Tool 1"
-                boxSize={{ base: "30px", md: "40px", lg: "50px" }}
+                boxSize={{ base: "25px", md: "40px", lg: "50px" }}
                 objectFit="contain"
               />
               {/* Logo 2 */}
               <Image
                 src="/image/logo/figma.png"
                 alt="Tool 1"
-                boxSize={{ base: "30px", md: "40px", lg: "60px" }}
+                boxSize={{ base: "26px", md: "40px", lg: "60px" }}
                 objectFit="contain"
               />
               {/* Logo 3 */}
               <Image
                 src="/image/logo/FireBase.png"
                 alt="Tool 1"
-                boxSize={{ base: "30px", md: "40px", lg: "60px" }}
+                boxSize={{ base: "27px", md: "40px", lg: "60px" }}
                 objectFit="contain"
               />
               {/* Logo 4 */}
@@ -952,7 +984,7 @@ const Index = () => {
             overflow="hidden"
             borderColor="#FFCDEA"
             w={{ base: "100%", md: "680px", lg: "1520px" }}
-            h={{ base: "auto", md: "620px", lg: "1000px" }}
+            h={{ base: "auto", md: "820px", lg: "1100px" }}
             p={{ base: 4, md: 4, lg: 14 }}
             background="linear-gradient(to bottom, #FFCDEA, #FFFFFF)"
           >
@@ -995,12 +1027,19 @@ const Index = () => {
               p={7}
             >
               <Text
-                fontSize={{ base: "15px", md: "18px", lg: "20px" }}
+                fontSize={{ base: "13px", md: "18px", lg: "19px" }}
                 color="gray.600"
-                textAlign="left"
+                textAlign={{ base: "left", md: "justify" }}
                 fontFamily="Poppins, sans-serif"
               >
-                Food Delivery App Prototype
+                An intuitive platform that takes the guesswork out of mealtime
+                choices. Powered by AI-driven recommendations, this app helps
+                users effortlessly find meals they’ll love. Crafted with a
+                user-centered design approach, every detail, from personas to
+                storyboards, ensures a seamless and delightful experience. By
+                blending proven usability principles like the 8 Golden Rules and
+                Gestalt theory, the prototype delivers an accessible and
+                responsive interface that truly puts the user first.
               </Text>
             </Stack>
 
@@ -1061,7 +1100,7 @@ const Index = () => {
             </Flex>
             {/* END logo-tools yang digunakan */}
 
-            {/* START Logo Internet dan GitHub */}
+            {/* START Logo Link */}
             <Flex
               direction="row"
               justify="right"
@@ -1071,7 +1110,7 @@ const Index = () => {
             >
               {/* Logo Internet */}
               <Link
-                href="https://www.example.com"
+                href="https://docs.google.com/document/d/1ftbi6nxW9RH78a1LQYEfflzYR77HZapWnRtjf6up4Ho/edit?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -1085,17 +1124,16 @@ const Index = () => {
                   objectFit="contain"
                 />
               </Link>
-
-              {/* Logo GitHub */}
+              {/* Logo Figma */}
               <Link
                 href="https://www.example.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <Image
-                  src="/image/logo/git.png"
-                  alt="GitHub"
-                  boxSize={{ base: "20px", md: "30px", lg: "40px" }}
+                  src="/image/logo/FH.png"
+                  alt="Internet"
+                  boxSize={{ base: "20px", md: "30px", lg: "50px" }}
                   _hover={{
                     animation: `${slideFromTop} 10s ease forwards`,
                   }}
@@ -1113,7 +1151,7 @@ const Index = () => {
             overflow="hidden"
             borderColor="#FFCDEA"
             w={{ base: "100%", md: "680px", lg: "1520px" }}
-            h={{ base: "auto", md: "700px", lg: "1130px" }}
+            h={{ base: "auto", md: "770px", lg: "1130px" }}
             p={{ base: 4, md: 4, lg: 14 }}
             background="linear-gradient(to bottom, #FFCDEA, #FFFFFF)"
           >
@@ -1136,7 +1174,7 @@ const Index = () => {
               {/* teks */}
               <Box>
                 <Text
-                  fontSize={{ base: "xl", md: "2xl", lg: "4xl" }}
+                  fontSize={{ base: "lg", md: "2xl", lg: "4xl" }}
                   fontWeight="bold"
                   fontFamily="Poppins, sans-serif"
                   color="black"
@@ -1156,13 +1194,16 @@ const Index = () => {
               p={7}
             >
               <Text
-                fontSize={{ base: "15px", md: "18px", lg: "20px" }}
+                fontSize={{ base: "13px", md: "18px", lg: "19px" }}
                 color="gray.600"
-                textAlign="left"
+                textAlign={{ base: "left", md: "justify" }}
                 fontFamily="Poppins, sans-serif"
               >
-                A short description of the project goes here. It's concise but
-                provides insight into the project.
+                A collaborative project focused on creating an accessible,
+                user-friendly event planning platform using Laravel. Designed
+                responsive front-end components and integrated them seamlessly
+                with back-end functionality to ensure a smooth experience across
+                devices."
               </Text>
             </Stack>
 
@@ -1217,6 +1258,24 @@ const Index = () => {
               <Image
                 src="/image/logo/Laravel.png"
                 alt="Tool 1"
+                boxSize={{ base: "30px", md: "40px", lg: "70px" }}
+                objectFit="contain"
+              />
+              <Image
+                src="/image/logo/JS.png"
+                alt="Tool 1"
+                boxSize={{ base: "30px", md: "40px", lg: "70px" }}
+                objectFit="contain"
+              />
+              <Image
+                src="/image/logo/CSS.png"
+                alt="Tool 1"
+                boxSize={{ base: "30px", md: "40px", lg: "70px" }}
+                objectFit="contain"
+              />
+              <Image
+                src="/image/logo/PHP.png"
+                alt="Tool 1"
                 boxSize={{ base: "30px", md: "40px", lg: "90px" }}
                 objectFit="contain"
               />
@@ -1229,7 +1288,7 @@ const Index = () => {
               justify="right"
               gap={5}
               p={7}
-              mt={{ base: "-20px", md: "-25px", lg: "-20px" }}
+              mt={{ base: "-10px", md: "-25px", lg: "-40px" }}
             >
               {/* Logo Internet */}
               <Link
@@ -1264,6 +1323,21 @@ const Index = () => {
                   objectFit="contain"
                 />
               </Link>
+              <Link
+                href="https://www.figma.com/design/eYOyC1eMtkAR5XMjf78fgN/brenna?node-id=0-1&p=f&t=4uoTlilQwxa1yfQM-0"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src="/image/logo/FH.png"
+                  alt="Internet"
+                  boxSize={{ base: "20px", md: "30px", lg: "45px" }}
+                  _hover={{
+                    animation: `${slideFromTop} 10s ease forwards`,
+                  }}
+                  objectFit="contain"
+                />
+              </Link>
             </Flex>
             {/* END Logo Internet dan GitHub */}
           </Box>
@@ -1274,7 +1348,7 @@ const Index = () => {
             overflow="hidden"
             borderColor="#FFCDEA"
             w={{ base: "100%", md: "680px", lg: "1520px" }}
-            h={{ base: "auto", md: "620px", lg: "950px" }}
+            h={{ base: "auto", md: "680px", lg: "950px" }}
             p={{ base: 4, md: 4, lg: 14 }}
             background="linear-gradient(to bottom, #FFCDEA, #FFFFFF)"
           >
@@ -1319,11 +1393,13 @@ const Index = () => {
               <Text
                 fontSize={{ base: "15px", md: "18px", lg: "20px" }}
                 color="gray.600"
-                textAlign="left"
+                textAlign={{ base: "left", md: "justify" }}
                 fontFamily="Poppins, sans-serif"
               >
-                A short description of the project goes here. It's concise but
-                provides insight into the project.
+                A fun and addictive clicker game where each frog click earns you
+                money. Upgrade your earnings with the 'Buy Auto Clicker' for
+                automatic gains and 'Buy Increase Clicker' to boost your income
+                per click!"
               </Text>
             </Stack>
 
@@ -1337,15 +1413,6 @@ const Index = () => {
               <Image
                 src="/image/Game.png"
                 alt="Project Image 1"
-                boxSize={{ base: "100%", md: "100%", lg: "100%" }}
-                objectFit="cover"
-                borderRadius="lg"
-              />
-
-              {/* Gambar kedua */}
-              <Image
-                src="/image/Game1.png"
-                alt="Project Image 2"
                 boxSize={{ base: "100%", md: "100%", lg: "100%" }}
                 objectFit="cover"
                 borderRadius="lg"
@@ -1381,7 +1448,20 @@ const Index = () => {
                 boxSize={{ base: "30px", md: "40px", lg: "90px" }}
                 objectFit="contain"
               />
+              <Image
+                src="/image/logo/CSS.png"
+                alt="Tool 1"
+                boxSize={{ base: "30px", md: "40px", lg: "75px" }}
+                objectFit="contain"
+              />
+              <Image
+                src="/image/logo/JS.png"
+                alt="Tool 1"
+                boxSize={{ base: "30px", md: "40px", lg: "75px" }}
+                objectFit="contain"
+              />
             </Flex>
+
             {/* END logo-tools yang digunakan */}
 
             {/* START Logo Internet dan GitHub */}
@@ -1411,7 +1491,7 @@ const Index = () => {
 
               {/* Logo GitHub */}
               <Link
-                href="https://www.example.com"
+                href="https://github.com/owin40/HTML-Lab"
                 target="_blank"
                 rel="noopener noreferrer"
               >
