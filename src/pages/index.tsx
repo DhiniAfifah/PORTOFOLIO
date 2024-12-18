@@ -26,13 +26,13 @@ const slideFromTop = keyframes`
 
 // Animasi slide dari kiri
 const slideFromLeft = {
-  hidden: { opacity: 0, x: -100 },
+  hidden: { opacity: 0, x: -20 },
   visible: { opacity: 1, x: 0 },
 };
 
 // Animasi slide dari kanan
 const slideFromRight = {
-  hidden: { opacity: 0, x: 100 },
+  hidden: { opacity: 0, x: 20 },
   visible: { opacity: 1, x: 0 },
 };
 
