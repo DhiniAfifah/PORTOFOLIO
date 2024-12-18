@@ -49,7 +49,7 @@ const Navbar = () => {
               About
             </Text>
           </Link>
-          <Link href={"#what-i-do"}>
+          <Link href={"/#what-i-do"}>
             <Text
               fontWeight={"Bold"}
               fontSize={{ base: "1rem", md: "1.25rem", xl: "1.5rem" }}
@@ -63,7 +63,11 @@ const Navbar = () => {
               Project
             </Text>
           </Link>
-          <Link href={"/contact"}>
+          <Link
+            href="mailto:afifahdhinin25@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Button
               fontSize={{ base: "1rem", md: "1.25rem", xl: "1.5rem" }}
               bgColor="#FFCDEA"

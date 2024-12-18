@@ -35,7 +35,7 @@ const Footer = () => {
 
         {/* Button Email */}
         <Link
-          href="mailto:afifahdhini25@gmail.com"
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=afifahdhinin25@gmail.com"
           _hover={{ textDecoration: "none" }}
         >
           <Button
@@ -78,21 +78,44 @@ const Footer = () => {
           align="center"
           mb={8}
         >
-          {["Project", "About", "Resume"].map((item) => (
-            <Link
-              key={item}
-              href={`/${item.toLowerCase()}`}
-              fontWeight="medium"
-              fontSize="lg"
-              color="Black"
-              fontFamily="'Poppins', sans-serif"
-              _hover={{
-                animation: `${slideFromTop} 0.5s ease forwards`,
-              }}
-            >
-              {item}
-            </Link>
-          ))}
+          <Link
+            href="/project"
+            fontWeight="medium"
+            fontSize="lg"
+            color="Black"
+            fontFamily="'Poppins', sans-serif"
+            _hover={{
+              animation: `${slideFromTop} 0.5s ease forwards`,
+            }}
+          >
+            Project
+          </Link>
+          <Link
+            href="/about"
+            fontWeight="medium"
+            fontSize="lg"
+            color="Black"
+            fontFamily="'Poppins', sans-serif"
+            _hover={{
+              animation: `${slideFromTop} 0.5s ease forwards`,
+            }}
+          >
+            About
+          </Link>
+          <Link
+            href="https://drive.google.com/drive/folders/1so-pqlSCgceOjlxuSdo7Fdd2kgicnqDi?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
+            fontWeight="medium"
+            fontSize="lg"
+            color="Black"
+            fontFamily="'Poppins', sans-serif"
+            _hover={{
+              animation: `${slideFromTop} 0.5s ease forwards`,
+            }}
+          >
+            Resume
+          </Link>
         </Stack>
 
         {/* Social Media Icons */}
@@ -126,7 +149,7 @@ const Footer = () => {
         {/* Copyright */}
         <Text
           fontSize="sm"
-          fontWeight={{ base: "10px", md: "20px", lg: "20px" }}
+          fontWeight="medium"
           color="black"
           textAlign={{ base: "center", md: "left" }}
           mt={14}
