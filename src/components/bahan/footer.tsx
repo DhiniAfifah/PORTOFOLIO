@@ -103,7 +103,7 @@ const Footer = () => {
             About
           </Link>
           <Link
-            href="https://drive.google.com/drive/folders/1so-pqlSCgceOjlxuSdo7Fdd2kgicnqDi?usp=drive_link"
+            href="https://drive.google.com/file/d/1xVojxsBZxQK2yU_s_MjwBuoupyAuBzb3/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
             fontWeight="medium"
