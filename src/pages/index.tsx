@@ -54,7 +54,7 @@ const Index = () => {
       {/* START Background */}
       <Stack
         backgroundColor="#fff"
-        minHeight={{ lg: "1360vh", md: "890vh", base: "1145vh" }}
+        minHeight={{ lg: "1410vh", md: "890vh", base: "1300vh" }}
         alignItems="center"
         position="relative"
       >
