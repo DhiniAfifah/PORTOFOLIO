@@ -54,7 +54,7 @@ const Index = () => {
       {/* START Background */}
       <Stack
         backgroundColor="#fff"
-        minHeight={{ lg: "1280vh", md: "817vh", base: "1050vh" }}
+        minHeight={{ lg: "1400vh", md: "890vh", base: "1299vh" }}
         alignItems="center"
         position="relative"
       >
@@ -1462,6 +1462,185 @@ const Index = () => {
               overflow="hidden"
               borderColor="#FFCDEA"
               w={{ base: "100%", md: "680px", lg: "1520px" }}
+              h={{ base: "auto", md: "680px", lg: "1040px" }}
+              p={{ base: 4, md: 4, lg: 14 }}
+              background="linear-gradient(to bottom, #FFCDEA, #FFFFFF)"
+            >
+              {/* logo dan teks */}
+              <Flex
+                direction={{ base: "row", md: "row", lg: "row" }}
+                align="center"
+                justify="flex-start"
+                gap={3} // jarak antara logo dan teks
+                p={6}
+              >
+                {/* Logo */}
+                <Image
+                  src="/image/WKL.png"
+                  alt="Project 1 Logo"
+                  boxSize={{ base: "40px", md: "50px", lg: "70px" }}
+                  objectFit="contain"
+                />
+
+                {/* teks */}
+                <Box>
+                  <Text
+                    fontSize={{ base: "xl", md: "2xl", lg: "4xl" }}
+                    fontWeight="bold"
+                    fontFamily="Poppins, sans-serif"
+                    color="black"
+                    textAlign="left"
+                    mb={1}
+                  >
+                    WorkQuest Application
+                  </Text>
+                </Box>
+              </Flex>
+              <Stack
+                direction="column"
+                align="flex-start"
+                justify="flex-start"
+                mt={{ base: "-45px", md: "-25px", lg: "-30px" }}
+                gap={2}
+                p={7}
+              >
+                <Text
+                  fontSize={{ base: "15px", md: "18px", lg: "20px" }}
+                  color="gray.600"
+                  textAlign={{ base: "left", md: "justify" }}
+                  fontFamily="Poppins, sans-serif"
+                >
+                  A user-centered project where I designed the UI in Figma and
+                  mapped workflows using system models. Applied quality
+                  management tools like Pareto charts and Earned Value Analysis
+                  to ensure top-notch deliverables, while addressing risks to
+                  keep the project aligned with goals.
+                </Text>
+              </Stack>
+
+              {/* START GAMBAR PROJECT */}
+              <Grid
+                templateColumns={{ base: "1fr", md: "1fr 1fr", lg: "1fr 1fr" }}
+                gap={8}
+                p={6}
+              >
+                {/* Gambar pertama */}
+                <Image
+                  src="/image/WK1.png"
+                  alt="Project Image 1"
+                  boxSize={{ base: "100%", md: "100%", lg: "100%" }}
+                  objectFit="cover"
+                  borderRadius="lg"
+                />
+                <Image
+                  src="/image/WK.png"
+                  alt="Project Image 1"
+                  boxSize={{ base: "100%", md: "100%", lg: "100%" }}
+                  objectFit="cover"
+                  borderRadius="lg"
+                />
+              </Grid>
+              {/* START BAGIAN Why Hire Me */}
+              <Stack p={6} mt={{ base: "2px", md: "2px", lg: "5px" }}>
+                {/* Teks "Why hire me?" */}
+                <Text
+                  fontSize={{ base: "15px", md: "2xl", lg: "4xl" }}
+                  fontWeight="medium"
+                  fontFamily="Poppins, sans-serif"
+                  color="black"
+                  textAlign="left"
+                >
+                  Tech Behind the Scenes
+                </Text>
+              </Stack>
+
+              {/* START logo-tools yang digunakan */}
+              <Flex
+                direction="row"
+                justify="left"
+                gap={{ base: "4", md: "10", lg: "9" }}
+                p={8}
+                wrap="wrap"
+                mt={{ base: "-45px", md: "-25px", lg: "-20px" }}
+              >
+                {/* Logo 1 */}
+                <Image
+                  src="/image/logo/figma.png"
+                  alt="Tool 1"
+                  boxSize={{ base: "30px", md: "40px", lg: "70px" }}
+                  objectFit="contain"
+                />
+                <Image
+                  src="/image/logo/trello.png"
+                  alt="Tool 1"
+                  boxSize={{ base: "30px", md: "40px", lg: "70px" }}
+                  objectFit="contain"
+                />
+              </Flex>
+
+              {/* END logo-tools yang digunakan */}
+
+              {/* START Logo Internet dan GitHub */}
+              <Flex
+                direction="row"
+                justify="right"
+                gap={5}
+                p={7}
+                mt={{ base: "-20px", md: "-25px", lg: "-20px" }}
+              >
+                {/* Logo Internet */}
+                <Link
+                  href="https://docs.google.com/document/d/1I1C6uEOnNcEgggUUvCKoLd1QcSkYyAUh_vnV6DqQ258/edit?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="/image/logo/internet.png"
+                    alt="Internet"
+                    boxSize={{ base: "20px", md: "30px", lg: "40px" }}
+                    _hover={{
+                      animation: `${slideFromTop} 10s ease forwards`,
+                    }}
+                    objectFit="contain"
+                  />
+                </Link>
+
+                {/* Logo GitHub */}
+                <Link
+                  href="https://www.figma.com/design/RD10dbJkPqFYwM2VSRqdAF/UI%2FUX-SOFTWARE-ENGINERING?node-id=0-1&t=uATCpmiog2CzGunq-1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="/image/logo/FH.png"
+                    alt="GitHub"
+                    boxSize={{ base: "20px", md: "30px", lg: "40px" }}
+                    _hover={{
+                      animation: `${slideFromTop} 10s ease forwards`,
+                    }}
+                    objectFit="contain"
+                  />
+                </Link>
+              </Flex>
+              {/* END Logo Internet dan GitHub */}
+            </Box>
+          </motion.div>
+          {/* END CARD */}
+
+          {/* CARD 6 */}
+          <motion.div
+            variants={slideFromLeft}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.8 }}
+          >
+            <Box
+              borderWidth="4px"
+              borderRadius="lg"
+              overflow="hidden"
+              borderColor="#FFCDEA"
+              w={{ base: "100%", md: "680px", lg: "1520px" }}
               h={{ base: "auto", md: "680px", lg: "950px" }}
               p={{ base: 4, md: 4, lg: 14 }}
               background="linear-gradient(to bottom, #FFCDEA, #FFFFFF)"
@@ -1630,7 +1809,6 @@ const Index = () => {
               {/* END Logo Internet dan GitHub */}
             </Box>
           </motion.div>
-          {/* END CARD */}
         </Stack>
         {/* END Projects */}
       </Stack>

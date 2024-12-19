@@ -78,8 +78,9 @@ const Footer = () => {
           align="center"
           mb={8}
         >
+          {/* Tautan ke Project */}
           <Link
-            href="/project"
+            href="#what-i-do" // Mengarah ke elemen dengan ID "what-i-do"
             fontWeight="medium"
             fontSize="lg"
             color="Black"
@@ -103,7 +104,7 @@ const Footer = () => {
             About
           </Link>
           <Link
-            href="https://drive.google.com/file/d/1xVojxsBZxQK2yU_s_MjwBuoupyAuBzb3/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1b3JtTun73Kf9Zy7vqbQzElwomU-0UNe6/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
             fontWeight="medium"
