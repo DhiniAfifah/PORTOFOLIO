@@ -1,99 +1,97 @@
-import { Link, Stack, Text, Button, Box } from "@chakra-ui/react";
+import { Link, Text, Box, Flex } from "@chakra-ui/react";
 
 const Navbar = () => {
   return (
     <>
-      <Stack
-        direction={"row"}
-        align={"center"}
-        justifyContent={"flex-end"}
-        h={"5rem"}
-        w={"100vw"}
-        px={{ base: "1rem", md: "2rem", xl: "4rem" }}
-        bgColor={"white"}
-        position={"fixed"}
+      {/* iOS Glass Pill Navbar */}
+      <Box
+        position="fixed"
+        top="24px"
+        left="50%"
+        transform="translateX(-50%)"
         zIndex={999}
-        boxShadow={"0px 4px 6.3px rgba(0, 0, 0, 0.3)"}
       >
-        {/* START Menu */}
-        <Stack
-          direction={"row"}
-          gap={{ base: 4, md: 6, xl: 8 }}
-          align={"center"}
+        {/* Glass Pill Container */}
+        <Box
+          bg="rgba(255, 255, 255, 0.9)"
+          backdropFilter="blur(20px)"
+          borderRadius="50px"
+          border="1px solid rgba(255, 255, 255, 0.3)"
+          boxShadow="0 4px 20px rgba(0, 0, 0, 0.1)"
+          px={6}
+          py={3}
+          style={{
+            WebkitBackdropFilter: "blur(20px)",
+          }}
         >
-          <Link href={"/"}>
-            <Text
-              fontWeight={"Bold"}
-              fontSize={{ base: "1rem", md: "1.25rem", xl: "1.5rem" }}
-              color={"black"}
-              transition="transform 0.3s ease-in-out"
-              _hover={{
-                transform: "scale(1.1)", // Tambahkan animasi scale-in
-                color: "#00598B", // Opsional: Ubah warna saat hover
-              }}
-            >
-              Home
-            </Text>
-          </Link>
-          <Link href={"/about"}>
-            <Text
-              fontWeight={"Bold"}
-              fontSize={{ base: "1rem", md: "1.25rem", xl: "1.5rem" }}
-              color={"black"}
-              transition="transform 0.3s ease-in-out"
-              _hover={{
-                transform: "scale(1.1)",
-                color: "#00598B",
-              }}
-            >
-              About
-            </Text>
-          </Link>
-          <Link href={"/#what-i-do"}>
-            <Text
-              fontWeight={"Bold"}
-              fontSize={{ base: "1rem", md: "1.25rem", xl: "1.5rem" }}
-              color={"black"}
-              transition="transform 0.3s ease-in-out"
-              _hover={{
-                transform: "scale(1.1)",
-                color: "#00598B",
-              }}
-            >
-              Project
-            </Text>
-          </Link>
-          <Link
-            href="mailto:afifahdhinin25@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Button
-              fontSize={{ base: "1rem", md: "1.25rem", xl: "1.5rem" }}
-              bgColor="#FFCDEA"
-              color="Black"
-              borderRadius="full"
-              px={{ base: "1.5rem", md: "1.5rem" }}
-              py={{ base: "0.75rem", md: "1.3rem" }}
-              _hover={{
-                bgColor: "#000",
-                color: "white",
-                transition: "all 0.3s ease",
-              }}
-              _active={{
-                bgColor: "button.primary",
-                color: "white",
-              }}
-            >
-              Contact
-            </Button>
-          </Link>
-        </Stack>
-        {/* END Menu */}
-      </Stack>
+          {/* Navigation Items */}
+          <Flex align="center" justify="center" gap={6}>
+            <Link href="/">
+              <Text
+                fontSize="15px"
+                fontWeight="500"
+                color="gray.700"
+                fontFamily="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+                _hover={{
+                  color: "gray.900",
+                }}
+                transition="color 0.2s ease"
+              >
+                Home
+              </Text>
+            </Link>
 
-      {/* Padding Top for the Navbar */}
-      <Box pt={"5rem"} />
+            <Link href="/about">
+              <Text
+                fontSize="15px"
+                fontWeight="500"
+                color="gray.700"
+                fontFamily="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+                _hover={{
+                  color: "gray.900",
+                }}
+                transition="color 0.2s ease"
+              >
+                About
+              </Text>
+            </Link>
+
+            <Link href="/#what-i-do">
+              <Text
+                fontSize="15px"
+                fontWeight="500"
+                color="gray.700"
+                fontFamily="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+                _hover={{
+                  color: "gray.900",
+                }}
+                transition="color 0.2s ease"
+              >
+                Projects
+              </Text>
+            </Link>
+
+            <Link
+              href="mailto:afifahdhinin25@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Text
+                fontSize="15px"
+                fontWeight="500"
+                color="gray.700"
+                fontFamily="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+                _hover={{
+                  color: "gray.900",
+                }}
+                transition="color 0.2s ease"
+              >
+                Contact
+              </Text>
+            </Link>
+          </Flex>
+        </Box>
+      </Box>
     </>
   );
 };
